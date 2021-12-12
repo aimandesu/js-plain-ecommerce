@@ -2,7 +2,7 @@ function createForm() {
   var my_form = document.createElement("form");
   //new one
   my_form.method = "post";
-  my_form.action = "/https://formsubmit.co/05c22619658c8b6061476942f1a51a84";
+  my_form.action = "https://formsubmit.co/05c22619658c8b6061476942f1a51a84";
   /*
   my_form.method = "post";
   my_form.action = "JS/order.php";
