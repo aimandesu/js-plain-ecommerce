@@ -36,8 +36,13 @@ function createForm() {
   my_form.submit();
 }
 
+/*
 function saveForm() {
   document.getElementById("order-form").style.display = "block";
+  document.getElementById("input-email").disabled = "true";
+  document.getElementById("input-name").disabled = "true";
+  document.getElementById("input-location").disabled = "true";
+  document.getElementById("input-order").disabled = "true";
 }
 
 function editForm() {
@@ -48,3 +53,4 @@ function editForm() {
   document.getElementById("input-location").disabled = "";
   document.getElementById("input-order").disabled = "";
 }
+*/

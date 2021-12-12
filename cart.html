@@ -117,7 +117,12 @@
           ></iframe>
           -->
           <!---->
-          <form action="JS/order.php" method="post">
+          <form
+            action="JS/order.php"
+            method="post"
+            onsubmit="createForm()"
+            target="_blank"
+          >
             <input
               id="input-email"
               type="email"
@@ -150,8 +155,10 @@
 
             <button type="submit" id="order-form">Send Order</button>
           </form>
+          <!--
           <button onclick="saveForm()">Save</button>
           <button onclick="editForm()">Edit</button>
+          -->
         </div>
       </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
