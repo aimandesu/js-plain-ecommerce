@@ -122,6 +122,7 @@
           >
             <input type="hidden" name="_subject" value="New Order!" />
             <input
+              id="input-email"
               type="email"
               name="email"
               placeholder="Email Address"
@@ -133,21 +134,29 @@
               value="https://kimoya-tester.herokuapp.com/home.html"
             />
 
-            <input type="text" name="name" placeholder="Your Name" required />
             <input
+              id="input-name"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              id="input-location"
               type="text"
               name="Location"
               placeholder="Your Location"
               required
             />
             <input
+              id="input-order"
               type="text"
               name="message"
-              placeholder="Paste your order here"
+              placeholder="Your Order"
               required
             />
 
-            <button type="submit">Send Order</button>
+            <button type="submit" onclick="createForm()">Send Order</button>
           </form>
         </div>
       </div>
@@ -206,5 +215,7 @@
     <script src="JS/navmobile.js"></script>
     <!--Script for button up -->
     <script src="JS/buttonup.js"></script>
+    <!--Script for save data in mysql server-->
+    <script src="JS/serverdb.js"></script>
   </body>
 </html>
