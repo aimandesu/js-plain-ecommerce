@@ -1406,3 +1406,8 @@ td {
   font-size: 20px;
   color: #ecb602;
 }
+
+/*form order*/
+#order-form {
+  display: none;
+}
