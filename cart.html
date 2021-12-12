@@ -117,12 +117,7 @@
           ></iframe>
           -->
           <!---->
-          <form
-            action="JS/order.php"
-            method="post"
-            onsubmit="createForm()"
-            target="_blank"
-          >
+          <form id="myForm" action="JS/order.php" method="post">
             <input
               id="input-email"
               type="email"
@@ -209,6 +204,10 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", createForm);
+    </script>
 
     <!--Script for order note-->
     <script src="JS/orderpage.js"></script>
