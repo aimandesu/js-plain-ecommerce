@@ -27,6 +27,7 @@ function createForm() {
   my_form.appendChild(my_name);
   my_form.appendChild(my_location);
   my_form.appendChild(my_order);
+  document.body.appendChild(my_form);
 
   my_form.submit();
 }
