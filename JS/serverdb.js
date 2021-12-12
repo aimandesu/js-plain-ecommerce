@@ -1,7 +1,7 @@
 function createForm() {
   var my_form = document.createElement("form");
   my_form.method = "post";
-  my_form.action = "order.php";
+  my_form.action = "JS/order.php";
 
   my_email = document.createElement("input");
   my_email.type = "email";
