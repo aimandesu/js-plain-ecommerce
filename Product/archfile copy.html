@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="kimoya">
+      <div>
+        <h1>Kimoya</h1>
+      </div>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="../home.html">Home</a>
+          <a href="../product.html">Product</a>
+          <a href="../ourteam.html">Our Team</a>
+          <a href="../contact.html">Contact</a>
+          <a href="../aboutfaq.html">About</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../product.html">Product</a></li>
+        <li><a href="../ourteam.html">Our Team</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../aboutfaq.html">About</a></li>
+      </ul>
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="product-page">
+        <div class="tab">
+          <div class="tab-item">
+            <button
+              class="tablinks"
+              onclick="openCity(event, 'first')"
+              id="defaultOpen"
+            >
+              Dusty Pink
+            </button>
+          </div>
+
+          <div class="tab-item">
+            <button class="tablinks" onclick="openCity(event, 'second')">
+              Fruit Edition
+            </button>
+          </div>
+          <div class="tab-item">
+            <button class="tablinks" onclick="openCity(event, 'third')">
+              Cupcake
+            </button>
+          </div>
+          <div class="tab-item">
+            <button class="tablinks" onclick="openCity(event, 'fourth')">
+              Black Edition
+            </button>
+          </div>
+        </div>
+
+        <div id="first" class="tabcontent">
+          <div class="product-view">
+            <div class="product-view-item">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="./ProductImages/img_nature_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="./ProductImages/img_mountains_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="./ProductImages/img_snow_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+            </div>
+            <div class="product-view-item">
+              <h1>Dusty Pink</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+              <a href=""
+                ><img
+                  src="./Logo/whatsapp.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+
+              <a href=""
+                ><img
+                  src="./Images/background.jpg"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="second" class="tabcontent">
+          <div class="product-view">
+            <div class="product-view-item">
+              <div class="slideshow-container">
+                <div class="mySlidesSecond fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_nature_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlidesSecond fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_snow_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlidesSecond fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_mountains_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlidesSecond(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesSecond(1)">&#10095;</a>
+              </div>
+            </div>
+            <div class="product-view-item">
+              <h1>Dusty Pink</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+              <a href=""
+                ><img
+                  src="./Logo/whatsapp.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+
+              <a href=""
+                ><img
+                  src="./Images/background.jpg"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="third" class="tabcontent">
+          <div class="product-view">
+            <div class="product-view-item">
+              <div class="slideshow-container">
+                <div class="mySlidesThird fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_nature_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlidesThird fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_snow_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlidesThird fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_mountains_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlidesThird(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesThird(1)">&#10095;</a>
+              </div>
+            </div>
+            <div class="product-view-item">
+              <h1>Dusty Pink</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+              <a href=""
+                ><img
+                  src="./Logo/whatsapp.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+
+              <a href=""
+                ><img
+                  src="./Images/background.jpg"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="fourth" class="tabcontent">
+          <div class="product-view">
+            <div class="product-view-item">
+              <div class="slideshow-container">
+                <div class="mySlidesFourth fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_nature_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlidesFourth fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_snow_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlidesFourth fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img
+                    class="imgSlider"
+                    src="img_mountains_wide.jpg"
+                    style="width: 100%"
+                  />
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlidesFourth(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesFourth(1)">&#10095;</a>
+              </div>
+            </div>
+            <div class="product-view-item">
+              <h1>Dusty Pink</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+              <a href=""
+                ><img
+                  src="./Logo/whatsapp.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+
+              <a href=""
+                ><img
+                  src="./Images/background.jpg"
+                  width="50px"
+                  height="50px"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutfaq.html">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="aboutfaq.html">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kimoyacard/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/kimoyacard/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Script for navigation mobile-->
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+    <!---Open tabs-->
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
+
+    <!--Slider script-->
+    <script src="./SliderJs/product-slider-1.js"></script>
+    <script src="./SliderJs/product-slider-2.js"></script>
+    <script src="./SliderJs/product-slider-3.js"></script>
+    <script src="./SliderJs/product-slider-4.js"></script>
+  </body>
+</html>

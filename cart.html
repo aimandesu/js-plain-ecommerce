@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body onload="order()">
+    <section class="kimoya">
+      <div>
+        <a href="home.html"
+          ><img
+            src="./Logo/kimoya1.png"
+            alt="kimoya"
+            width="600px"
+            height="200px"
+        /></a>
+      </div>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="home.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact</a>
+          <a href="aboutfaq.html">About</a>
+          <a href="orderpage.html">Order</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutfaq.html">About</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+      </ul>
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="order-cart">
+        <div class="order-cart-item">
+          <h1>
+            Your playlist of item to buy: Please fill in the form to order the
+            item.
+          </h1>
+        </div>
+        <div class="order-cart-item">
+          <div id="archfile"></div>
+          <div id="billbook"></div>
+          <div id="bussinesscard"></div>
+          <div id="buttonbadge"></div>
+          <div id="booklet"></div>
+          <div id="bookmark"></div>
+          <div id="envelope"></div>
+          <div id="folder"></div>
+          <div id="Lshapefolder"></div>
+          <div id="magnet"></div>
+          <div id="memobox"></div>
+          <div id="moneypacket"></div>
+          <div id="mug"></div>
+          <div id="multisticker"></div>
+          <div id="notepad"></div>
+          <div id="stamchop"></div>
+          <div id="tentcard"></div>
+          <div id="wirenotebook"></div>
+          <div id="computerform"></div>
+          <div id="handfan"></div>
+          <div id="hanger"></div>
+          <div id="hardcover"></div>
+          <div id="letterhead"></div>
+          <div id="maskkeeper"></div>
+          <div id="nonwovenbag"></div>
+          <div id="paperbag"></div>
+          <div id="sachet"></div>
+          <div id="voucher"></div>
+          <div id="wobbler"></div>
+          <div id="labelsticker"></div>
+          <div id="windowsticker"></div>
+          <div id="tissuebox"></div>
+          <div id="carsticker"></div>
+          <div id="weddingcard"></div>
+          <div id="weddinggoodies"></div>
+          <div id="thankyoucard"></div>
+        </div>
+        <div class="order-cart-item">
+          <br />
+          <button id="copybutton" onclick="copy()">Copy Order</button>
+          <button id="orderdetails">
+            <a href="orderpage.html">Price Details</a>
+          </button>
+        </div>
+        <br />
+        <div class="order-cart-item">
+          <!--
+          <iframe
+            src="https://whatsform.com/C3HQz8"
+            width="100%"
+            height="600px"
+            frameborder="0"
+          ></iframe>
+          -->
+          <form
+            action="https://formsubmit.co/aimanafiqbinesam@gmail.com"
+            method="post"
+          >
+            <input type="hidden" name="_subject" value="New Order!" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://kimoya-app-testing.herokuapp.com/home.html"
+            />
+
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="text"
+              name="message"
+              placeholder="Your Location"
+              required
+            />
+            <input
+              type="text"
+              name="message"
+              placeholder="Paste your order here"
+              required
+            />
+
+            <button type="submit">Send Order</button>
+          </form>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutfaq.html">about us</a></li>
+              <li><a href="product.html">our services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="storepolicyandreturn.html#shipping"
+                  >shipping and returns</a
+                >
+              </li>
+
+              <li><a href="storepolicyandreturn.html">store policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="how-to-order.html">How to order</a></li>
+              <li><a href="paymentoptions.html">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kimoyacard/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/kimoyacard/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Script for order note-->
+    <script src="js/orderpage.js"></script>
+    <!--Script for navigation mobile-->
+    <script src="js/navmobile.js"></script>
+    <!--Script for button up -->
+    <script src="js/buttonup.js"></script>
+  </body>
+</html>

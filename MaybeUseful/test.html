@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="edit.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+        reiciendis omnis aliquid hic mollitia qui quibusdam quam, debitis harum
+        fuga, aspernatur esse provident. Maiores, voluptas possimus.
+        Voluptatibus, nisi! Voluptate, enim!
+      </p>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="ourteam.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section>
+      <h1>test</h1>
+    </section>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+  </body>
+</html>

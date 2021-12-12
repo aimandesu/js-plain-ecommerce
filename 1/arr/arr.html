@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+  </head>
+  <body onload="readCheckboxes()">
+    <div class="container">
+      <form>
+        <input
+          type="checkbox"
+          id="fruitedition"
+          value="Fruit Edition"
+          onclick="orderitem('archfile', 0), save()"
+        />
+        <input
+          type="checkbox"
+          id="cupcakedesign"
+          value="Cupcake Design"
+          onclick="orderitem('archfile',0), save()"
+        />
+
+        <button onclick="save()">Save</button>
+        <button onclick="readCheckboxes()">Load</button>
+      </form>
+      <form>
+        <input
+          type="checkbox"
+          id="billbook1"
+          value="Bill Book 1"
+          onclick="orderitem('billbook', 1), save()"
+        />
+        <input
+          type="checkbox"
+          id="billbook2"
+          value="Bill Book 2"
+          onclick="orderitem('billbook', 1), save()"
+        />
+      </form>
+      <a href="arr1.html">a</a>
+    </div>
+    <script src="arr.js"></script>
+  </body>
+</html>

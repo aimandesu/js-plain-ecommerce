@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body onload="readCheckboxes()">
+    <section class="kimoya">
+      <div>
+        <a href="../home.html"
+          ><img
+            src="../Logo/kimoya1.png"
+            alt="kimoya"
+            width="600px"
+            height="200px"
+        /></a>
+      </div>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="../home.html">Home</a>
+          <a href="../product.html">Product</a>
+          <a href="../contact.html">Contact</a>
+          <a href="../aboutfaq.html">About</a>
+          <a href="../orderpage.html">Order</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../product.html">Product</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../aboutfaq.html">About</a></li>
+        <li><a href="../orderpage.html">Order</a></li>
+      </ul>
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="product-top-sign">
+        <img
+          src="./ProductImages/Bill Book/top.png"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="product-page">
+        <div class="product-view">
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <div id="slideshow1" class="slideshow-container">
+              <div class="mySlides fade">
+                <img
+                  class="imgSlider"
+                  src="./ProductImages/Bill Book/billbook1.png"
+                />
+              </div>
+
+              <div class="mySlides fade"></div>
+
+              <div class="mySlides fade"></div>
+
+              <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+            </div>
+          </div>
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <h1>Bill Book 1</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+              unde neque quibusdam autem excepturi quia tenetur voluptas totam
+              cupiditate inventore assumenda!
+            </p>
+            <p>price</p>
+          </div>
+        </div>
+        <div class="product-view">
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <div id="slideshow2" class="slideshow-container">
+              <div class="mySlides fade">
+                <img
+                  class="imgSlider"
+                  src="./ProductImages/Bill Book/billbook2.png"
+                />
+              </div>
+
+              <div class="mySlides fade"></div>
+
+              <div class="mySlides fade"></div>
+
+              <a class="prev" onclick="plusSlides(-1, slideshow2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+            </div>
+          </div>
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <h1>Bill Book 2</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+              unde neque quibusdam autem excepturi quia tenetur voluptas totam
+              cupiditate inventore assumenda!
+            </p>
+            <p>price</p>
+          </div>
+        </div>
+        <div id="billbook-3" class="product-view">
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <div id="slideshow3" class="slideshow-container">
+              <div class="mySlides fade">
+                <img
+                  class="imgSlider"
+                  src="./ProductImages/Bill Book/billbook3.png"
+                />
+              </div>
+
+              <div class="mySlides fade"></div>
+
+              <div class="mySlides fade"></div>
+
+              <a class="prev" onclick="plusSlides(-1, slideshow3)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+            </div>
+          </div>
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <h1>Bill Book 3</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+              unde neque quibusdam autem excepturi quia tenetur voluptas totam
+              cupiditate inventore assumenda!
+            </p>
+            <p>price</p>
+          </div>
+        </div>
+        <div class="product-view">
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <div id="slideshow4" class="slideshow-container">
+              <div class="mySlides fade">
+                <img
+                  class="imgSlider"
+                  src="./ProductImages/Bill Book/billbook4.png"
+                />
+              </div>
+
+              <div class="mySlides fade"></div>
+
+              <div class="mySlides fade"></div>
+
+              <a class="prev" onclick="plusSlides(-1, slideshow4)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+            </div>
+          </div>
+          <div
+            class="product-view-item"
+            style="flex-basis: 200px; flex-grow: 1"
+          >
+            <h1>Bill Book 4</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+              unde neque quibusdam autem excepturi quia tenetur voluptas totam
+              cupiditate inventore assumenda!
+            </p>
+            <p>price</p>
+          </div>
+        </div>
+      </div>
+      <div class="note" id="note">
+        <button id="buttonClose" onclick="closeDiv()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="note-container" id="btn3" onclick="ShowDiv()">
+          <div class="note-container-item" id="slider-note">
+            <div class="sticky">
+              <h1>
+                <i class="fas fa-clipboard-list"></i> Note/Go To Product
+              </h1>
+              <div class="cart-note">
+                <a href="../orderpage.html"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+              <div class="search">
+                <input type="text"
+                id="Search"
+                onkeyup="searchProduct()"
+                placeholder="search/click to view product"
+                title="Type Product">
+              </div>
+            </div>
+           
+            <div class="note-each vertical" id="archfile">
+              <h2> <a href="./archfile.html?key=archfile">Arch File</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item">
+                 <form>
+                 Dusty Pink
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="dustypink"
+                   value="Dusty Pink"
+                   onclick="orderitem('archfile',0), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Fruit Edition
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="fruitedition"
+                   value="Fruit Edition"
+                   onclick="orderitem('archfile',0), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Cupcake Design
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="cupcakedesign"
+                   value="Cupcake Design"
+                   onclick="orderitem('archfile',0), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Black Edition
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="blackedition"
+                   value="Black Edition"
+                   onclick="orderitem('archfile',0), save()"
+                 />
+               </form>
+               </div>
+             </div>
+           </div>
+           
+           <div class="note-each vertical" id="billbook">
+             <h2><a href="./billbook.html?key=billbook">Bill Book</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item">
+                 <form>
+                 Bill Book 1
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="billbook1"
+                   value="Bill Book 1"
+                   onclick="orderitem('billbook', 1), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bill Book 2
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="billbook2"
+                   value="Bill Book 2"
+                   onclick="orderitem('billbook', 1), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bill Book 3
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="billbook3"
+                   value="Bill Book 3"
+                   onclick="orderitem('billbook', 1), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bill Book 4
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="billbook4"
+                   value="Bill Book 4"
+                   onclick="orderitem('billbook',1), save()"
+                 />
+               </form>
+               </div>
+             </div>
+           </div>
+
+           <div class="note-each vertical" id="bussinesscard">
+             <h2><a href="./bussinesscard.html?key=bussinesscard">Bussiness Card</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Bussiness Card 1
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="Bussiness Card 1"
+                   value="Bussiness Card 1"
+                   onclick="orderitem('bussinesscard', 2), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bussiness Card 2
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="Bussiness Card 2"
+                   value="Bussiness Card 2"
+                   onclick="orderitem('bussinesscard', 2), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bussiness Card 3
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="Bussiness Card 3"
+                   value="Bussiness Card 3"
+                   onclick="orderitem('bussinesscard', 2), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bussiness Card 4
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="Bussiness Card 4"
+                   value="Bussiness Card 4"
+                   onclick="orderitem('bussinesscard', 2), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bussiness Card 5
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="Bussiness Card 5"
+                   value="Bussiness Card 5"
+                   onclick="orderitem('bussinesscard', 2), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Bussiness Card 6
+                 <input
+                   type="checkbox"
+                   class="boxes"
+                   id="Bussiness Card 6"
+                   value="Bussiness Card 6"
+                   onclick="orderitem('bussinesscard', 2), save()"
+                 />
+               </div>
+             </form>
+             </div> 
+           </div>
+           
+           <div class="note-each vertical" id="buttonbadge">
+             <h2><a href="./buttonbadge.html?key=buttonbadge">Button Badge</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Circle
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Button Badge 1"
+                 value="Circle"
+                 onclick="orderitem('buttonbadge', 3), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Singular
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Button Badge 2"
+                 value="Singular"
+                 onclick="orderitem('buttonbadge', 3), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Custom
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Button Badge 3"
+                 value="Custom"
+                 onclick="orderitem('buttonbadge', 3), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Midnight
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Button Badge 4"
+                 value="Midnight"
+                 onclick="orderitem('buttonbadge', 3), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Rectangle
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Button Badge 5"
+                 value="Rectangle"
+                 onclick="orderitem('buttonbadge', 3), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Pink
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Button Badge 6"
+                 value="Pink"
+                 onclick="orderitem('buttonbadge', 3), save()"
+               />
+               </div>
+             </form>
+             </div>
+           </div>
+           
+           <div class="note-each vertical" id="booklet">
+             <h2><a href="./booklet.html?key=booklet">Booklet</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Booklet 1"
+                 value="Design 1"
+                 onclick="orderitem('booklet', 4), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Booklet 2"
+                 value="Design 2"
+                 onclick="orderitem('booklet', 4), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Booklet 3"
+                 value="Design 3"
+                 onclick="orderitem('booklet', 4), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Wired
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Booklet 4"
+                 value="Wired"
+                 onclick="orderitem('booklet', 4), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Custom
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Booklet 5"
+                 value="Custom"
+                 onclick="orderitem('booklet', 4), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 A4 Size
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Booklet 6"
+                 value="A4 Size"
+                 onclick="orderitem('booklet', 4), save()"
+               />
+               </div>
+             </form>
+             </div>
+           </div>
+           
+           <div class="note-each vertical" id="bookmark">
+             <h2><a href="./bookmark.html?key=bookmark">Bookmark</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Bookmark 1"
+                 value="Design 1"
+                 onclick="orderitem('bookmark', 5), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Bookmark 2"
+                 value="Design 2"
+                 onclick="orderitem('bookmark', 5), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Bookmark 3"
+                 value="Design 3"
+                 onclick="orderitem('bookmark', 5), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Bookmark 4"
+                 value="Design 4"
+                 onclick="orderitem('bookmark', 5), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Bookmark 5"
+                 value="Design 5"
+                 onclick="orderitem('bookmark', 5), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 6
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Bookmark 6"
+                 value="Design 6"
+                 onclick="orderitem('bookmark', 5), save()"
+               />
+               </div>
+             </form>
+             </div>
+           </div>
+           
+           <div class="note-each vertical" id="envelope">
+             <h2><a href="./envelope.html?key=envelope">Envelope</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Envelope 1"
+                 value="Design 1"
+                 onclick="orderitem('envelope', 6), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Envelope 2"
+                 value="Design 2"
+                 onclick="orderitem('envelope', 6), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Envelope 3"
+                 value="Design 3"
+                 onclick="orderitem('envelope', 6), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Envelope 4"
+                 value="Design 4"
+                 onclick="orderitem('envelope', 6), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Envelope 5"
+                 value="Design 5"
+                 onclick="orderitem('envelope', 6), save()"
+               />
+               </div>
+               <div class="note-each-item">
+                 Design 6
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Envelope 6"
+                 value="Design 6"
+                 onclick="orderitem('envelope', 6), save()"
+               />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="folder">
+             <h2><a href="./folder.html?key=folder">Folder</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Folder 1"
+                 value="Design 1"
+                 onclick="orderitem('folder', 7), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Folder 2"
+                 value="Design 2"
+                 onclick="orderitem('folder', 7), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Folder 3"
+                 value="Design 3"
+                 onclick="orderitem('folder', 7), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="lshapefolder">
+             <h2><a href="./Lshapefolder.html?key=lshapefolder">L-Shape Plastic Folder</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="L-Shape 1"
+                 value="Design 1"
+                 onclick="orderitem('Lshapefolder', 8), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="L-Shape 2"
+                 value="Design 2"
+                 onclick="orderitem('Lshapefolder', 8), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Cupcake Design
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="L-Shape 3"
+                 value="Cupcake Design"
+                 onclick="orderitem('Lshapefolder', 8), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div> 
+           
+           <div class="note-each vertical" id="magnet">
+             <h2><a href="./magnet.html?key=magnet">Magnet</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Magnet 1"
+                 value="Design 1"
+                 onclick="orderitem('magnet', 9), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Magnet 2"
+                 value="Design 2"
+                 onclick="orderitem('magnet', 9), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Magnet 3"
+                 value="Design 3"
+                 onclick="orderitem('magnet', 9), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Magnet 4"
+                 value="Design 4"
+                 onclick="orderitem('magnet', 9), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="memobox">
+             <h2><a href="./memobox.html?key=memobox">Memo Box</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Memobox 1"
+                 value="Design 1"
+                 onclick="orderitem('memobox', 10), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Memobox 2"
+                 value="Design 2"
+                 onclick="orderitem('memobox', 10), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Memobox 3"
+                 value="Design 3"
+                 onclick="orderitem('memobox', 10), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Memobox 4"
+                 value="Design 4"
+                 onclick="orderitem('memobox', 10), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="Memobox 5"
+                 value="Design 5"
+                 onclick="orderitem('memobox', 10), save()"
+                 />
+               </div>
+             </form>
+             </div>
+            
+           </div>
+              
+           <div class="note-each vertical" id="moneypacket">
+             <h2><a href="./moneypacket.html?key=moneypacket">Money Packet</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="moneypacket1"
+                 value="Design 1"
+                 onclick="orderitem('moneypacket', 11), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="moneypacket2"
+                 value="Design 2"
+                 onclick="orderitem('moneypacket', 11), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="moneypacket3"
+                 value="Design 3"
+                 onclick="orderitem('moneypacket', 11), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="moneypacket4"
+                 value="Design 4"
+                 onclick="orderitem('moneypacket', 11), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="moneypacket5"
+                 value="Design 5"
+                 onclick="orderitem('moneypacket', 11), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="mug">
+             <h2><a href="./mug.html?key=mug">Mug</a></h2> 
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="mug1"
+                 value="Design 1"
+                 onclick="orderitem('mug', 12), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="mug2"
+                 value="Design 2"
+                 onclick="orderitem('mug', 12), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="mug3"
+                 value="Design 3"
+                 onclick="orderitem('mug', 12), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="mug4"
+                 value="Design 4"
+                 onclick="orderitem('mug', 12), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="mug5"
+                 value="Design 5"
+                 onclick="orderitem('mug', 12), save()"
+                 />
+               </div>
+             </form>
+             </div>
+           </div>
+           
+           <div class="note-each vertical" id="multisticker">
+             <h2><a href="./multisticker.html?key=multisticker">Multi Purpose Sticker</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="multisticker1"
+                 value="Design 1"
+                 onclick="orderitem('multisticker', 13), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="multisticker2"
+                 value="Design 2"
+                 onclick="orderitem('multisticker', 13), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="multisticker3"
+                 value="Design 3"
+                 onclick="orderitem('multisticker', 13), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="multisticker4"
+                 value="Design 4"
+                 onclick="orderitem('multisticker', 13), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="notepad">
+             <h2><a href="./notepad.html?key=notepad">Notepad</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="notepad1"
+                 value="Design 1"
+                 onclick="orderitem('notepad', 14), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="notepad2"
+                 value="Design 2"
+                 onclick="orderitem('notepad', 14), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="notepad3"
+                 value="Design 3"
+                 onclick="orderitem('notepad', 14), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="notepad4"
+                 value="Design 4"
+                 onclick="orderitem('notepad', 14), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="notepad5"
+                 value="Design 5"
+                 onclick="orderitem('notepad', 14), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 6
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="notepad6"
+                 value="Design 6"
+                 onclick="orderitem('notepad', 14), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="stamchop">
+             <h2><a href="./stampchop.html?key=stamchop">Stamchop</a></h2>
+             <div class="note-each">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="stamchop1"
+                 value="Design 1"
+                 onclick="orderitem('stamchop', 15), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="stamchop2"
+                 value="Design 2"
+                 onclick="orderitem('stamchop', 15), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="stamchop3"
+                 value="Design 3"
+                 onclick="orderitem('stamchop', 15), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="stamchop4"
+                 value="Design 4"
+                 onclick="orderitem('stamchop', 15), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+           
+           <div class="note-each vertical" id="tentcard">
+             <h2><a href="./tentcard.html?key=tentcard">Tent Card</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="tentcard1"
+                 value="Design 1"
+                 onclick="orderitem('tentcard', 16), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="tentcard2"
+                 value="Design 2"
+                 onclick="orderitem('tentcard', 16), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="tentcard3"
+                 value="Design 3"
+                 onclick="orderitem('tentcard', 16), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="tentcard4"
+                 value="Design 4"
+                 onclick="orderitem('tentcard', 16), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 5
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="tentcard5"
+                 value="Design 5"
+                 onclick="orderitem('tentcard', 16), save()"
+                 />
+               </div>
+             </form>
+             </div>
+            
+           </div>
+           
+           <div class="note-each vertical" id="wirenotebook">
+             <h2><a href="./wirenotebook.html?key=wirenotebook">Wire-o-notebook</a></h2>
+             <div class="note-each horizontal">
+               <div class="note-each-item"><form>
+                 Design 1
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="wirenotebook1"
+                 value="Design 1"
+                 onclick="orderitem('wirenotebook', 17), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 2
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="wirenotebook2"
+                 value="Design 2"
+                 onclick="orderitem('wirenotebook', 17), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 3
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="wirenotebook3"
+                 value="Design 3"
+                 onclick="orderitem('wirenotebook', 17), save()"
+                 />
+               </div>
+               <div class="note-each-item">
+                 Design 4
+                 <input
+                 type="checkbox"
+                 class="boxes"
+                 id="wirenotebook4"
+                 value="Design 4"
+                 onclick="orderitem('wirenotebook', 17), save()"
+                 />
+               </div>
+             </form>
+             </div>
+             
+           </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="../aboutfaq.html">about us</a></li>
+              <li><a href="../product.html">our services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="../storepolicyandreturn.html#shipping"
+                  >shipping and returns</a
+                >
+              </li>
+
+              <li><a href="../storepolicyandreturn.html">store policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="../how-to-order.html">How to order</a></li>
+              <li><a href="../paymentoptions.html">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kimoyacard/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/kimoyacard/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Script for navigation mobile-->
+    <script src="./JS/navMobile.js"></script>
+    <!--Slider script-->
+    <script src="./JS/product-slider.js"></script>
+    <!--open close-->
+    <script src="./JS/openCloseNote.js"></script>
+    <!--Script for note-->
+    <script src="./JS/note.js"></script>
+  </body>
+</html>

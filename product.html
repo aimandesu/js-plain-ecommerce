@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="kimoya">
+      <div>
+        <a href="home.html"
+          ><img
+            src="./Logo/kimoya1.png"
+            alt="kimoya"
+            width="600px"
+            height="200px"
+        /></a>
+      </div>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="home.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact</a>
+          <a href="aboutfaq.html">About</a>
+          <a href="orderpage.html">Order</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutfaq.html">About</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+      </ul>
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="our-services">
+        <!--flex basis, flex grow, flex shrink-->
+        <div class="our-services-item" style="flex-basis: 200px; flex-grow: 2">
+          <h1>Our Services</h1>
+          <p>
+            We provides services such as wedding cards, calanders, posters,
+            bussiness cards and many more other services!
+          </p>
+        </div>
+        <div class="our-services-item" style="flex-basis: 200px; flex-grow: 1">
+          <img
+            src="Logo/yata.png"
+            width="100%"
+            height="100%"
+            alt="our services"
+          />
+        </div>
+      </div>
+      <div class="shop">
+        <h1>shop</h1>
+        <div class="search">
+          <input
+            type="text"
+            id="Search"
+            onkeyup="myFunction()"
+            placeholder="Search"
+            title="Type in a name"
+          />
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <a href="Product/archfile.html?key=archfile"
+                ><img
+                  src="./Product/ProductImages/ArchFile/cupcake.jpg"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Arch File</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/billbook.html?key=billbook"
+                ><img
+                  src="./Product/ProductImages/Bill Book/billbook3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Bill Book</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/bussinesscard.html?key=bussinesscard"
+                ><img
+                  src="./Product/ProductImages/Bussiness card/bussiness.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Bussiness Card</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/buttonbadge.html?key=buttonbadge"
+                ><img
+                  src="./Product/ProductImages/Badge/midnight.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Button Badge</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/booklet.html?key=booklet"
+                ><img
+                  src="./Product/ProductImages/Booklet/booklet3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Booklet</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/bookmark.html?key=bookmark"
+                ><img
+                  src="./Product/ProductImages/Bookmark/bookmark1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Bookmark</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/envelope.html?key=envelope"
+                ><img
+                  src="./Product/ProductImages/Envelope/envelope3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Envelope</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/folder.html?key=folder"
+                ><img
+                  src="./Product/ProductImages/Folder/folder3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Folder</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/Lshapefolder.html?key=lshapefolder"
+                ><img
+                  src="./Product/ProductImages/LshapeFolder/folder1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>L-shape plastic folder</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/magnet.html?key=magnet"
+                ><img
+                  src="./Product/ProductImages/Magnet/magnet4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Magnet</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/memobox.html?key=memobox"
+                ><img
+                  src="./Product/ProductImages/Memobox/memobox1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Memo Box</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/moneypacket.html?key=moneypacket"
+                ><img
+                  src="./Product/ProductImages/MoneyPacket/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Money Packet</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/mug.html?key=mug"
+                ><img
+                  src="./Product/ProductImages/Mug/design5.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Mug</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/multisticker.html?key=multisticker"
+                ><img
+                  src="./Product/ProductImages/MultiSticker/design4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Multi-purpose sticker</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/notepad.html?key=notepad"
+                ><img
+                  src="./Product/ProductImages/Notepad/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Notepad</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/stampchop.html?key=stamchop"
+                ><img
+                  src="./Product/ProductImages/StampChop/design1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Stamchop</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/tentcard.html?key=tentcard"
+                ><img
+                  src="./Product/ProductImages/TentCard/design3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Tent card</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/wirenotebook.html?key=wirenotebook"
+                ><img
+                  src="./Product/ProductImages/WireNotebook/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Wire-o-notebook</p>
+            </div>
+          </div>
+
+          <!--New Products-->
+          <div class="column">
+            <div class="card">
+              <a href="./Product/computerform.html?key=computerform"
+                ><img
+                  src="./Product/ProductImages/ArchFile/cupcake.jpg"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Computer Form</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/handfan.html?key=handfan"
+                ><img
+                  src="./Product/ProductImages/HandFan/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Hand Fan</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/hanger.html?key=hanger"
+                ><img
+                  src="./Product/ProductImages/Bussiness card/bussiness.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Hanger</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/hardcover.html?key=hardcover"
+                ><img
+                  src="./Product/ProductImages/Badge/midnight.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Hard Cover Menu</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/letterhead.html?key=letterhead"
+                ><img
+                  src="./Product/ProductImages/Booklet/booklet3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Letterhead</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/maskkeeper.html?key=maskeeper"
+                ><img
+                  src="./Product/ProductImages/Bookmark/bookmark1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Mask Keeper</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/nonwovenbag.html?key=nonwovenbag"
+                ><img
+                  src="./Product/ProductImages/NonWovenBag/design4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Non Woven Bag</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/paperbag.html?key=paperbag"
+                ><img
+                  src="./Product/ProductImages/paperbag/design4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Paperbag</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/sachet.html?key=sachet"
+                ><img
+                  src="./Product/ProductImages/SachetBoard/design4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Sachet Board</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/voucher.html?key=voucher"
+                ><img
+                  src="./Product/ProductImages/Magnet/magnet4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Voucher</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/wobbler.html?key=wobbler"
+                ><img
+                  src="./Product/ProductImages/Memobox/memobox1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Wobbler</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/labelsticker.html?key=labelsticker"
+                ><img
+                  src="./Product/ProductImages/Labelsticker/design1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Label Sticker</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/windowsticker.html?key=windowsticker"
+                ><img
+                  src="./Product/ProductImages/WindowSticker/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Window Sticker</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/tissuebox.html?key=tissuebox"
+                ><img
+                  src="./Product/ProductImages/TissueBox/design4.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Tissue Box</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/carsticker.html?key=carsticker"
+                ><img
+                  src="./Product/ProductImages/Notepad/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Car Sticker</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/weddingcard.html?key=weddingcard"
+                ><img
+                  src="./Product/ProductImages/StampChop/design1.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Wedding Cards</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/weddinggoodies.html?key=weddinggoodies"
+                ><img
+                  src="./Product/ProductImages/TentCard/design3.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Wedding Goodies</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="./Product/thankyoucard.html?key=thankyoucard"
+                ><img
+                  src="./Product/ProductImages/WireNotebook/design2.png"
+                  alt="Avatar"
+                  width="100%"
+                  height="90%"
+              /></a>
+              <p>Thank You Card</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutfaq.html">about us</a></li>
+              <li><a href="product.html">our services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="storepolicyandreturn.html#shipping"
+                  >shipping and returns</a
+                >
+              </li>
+
+              <li><a href="storepolicyandreturn.html">store policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="how-to-order.html">How to order</a></li>
+              <li><a href="paymentoptions.html">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kimoyacard/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/kimoyacard/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Script for navigation mobile-->
+    <script src="js/navmobile.js"></script>
+    <!--Script for searches-->
+    <script src="js/productsearch.js"></script>
+    <!--Script for button up -->
+    <script src="js/buttonup.js"></script>
+  </body>
+</html>

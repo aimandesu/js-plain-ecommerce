@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <style>
+      #section-3 {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        float: right;
+        width: 33%;
+        height: auto;
+        background: transparent;
+      }
+
+      #section-3 .container {
+        position: relative;
+        float: right;
+        height: 100%;
+      }
+
+      .info-slide {
+        position: absolute;
+        bottom: 0;
+        float: right;
+        width: 100%;
+        height: 70px;
+        cursor: pointer;
+        overflow: hidden;
+
+        text-align: center;
+        background: whitesmoke;
+
+        transition: height 0.4s ease-in-out;
+        -webkit-transition: height 0.4s ease-in-out;
+        -moz-transition: height 0.4s ease-in-out;
+      }
+
+      /*
+      .info-slide:hover,
+      .info-slide:active {
+        height: auto;
+      }*/
+
+      #section-3 .container h1 {
+        float: right;
+        padding: 10px 0;
+        font-size: 20px;
+        width: 100%;
+        color: bisque;
+        background: orange;
+        height: 20px;
+      }
+
+      #section-3 .container p {
+        float: right;
+        padding: 5% 10%;
+        font-size: 16px;
+        bottom: 0;
+        width: 80%;
+        color: gray;
+      }
+
+      #section-3 #btn3 {
+        width: 100%;
+
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+
+      i {
+        font-size: 25px;
+      }
+      button {
+        float: right;
+        display: none;
+      }
+    </style>
+    <section id="section-3">
+      <div class="container" id="btn3" onclick="ShowDiv()">
+        <div class="info-slide" id="slider">
+          <h1><i class="fas fa-clipboard-list"></i> Note the things to buy</h1>
+          <div class="archfile">
+            <form>
+              Dusty Pink
+              <input
+                type="checkbox"
+                name="archfile"
+                value="Dusty Pink"
+                onclick="orderitem('archfile',0)"
+              />
+              Fruit Edition
+              <input
+                type="checkbox"
+                name="archfile"
+                value="Fruit Edition"
+                onclick="orderitem('archfile',0)"
+              />
+              Cupcake Design
+              <input
+                type="checkbox"
+                name="archfile"
+                value="Cupcake Design"
+                onclick="orderitem('archfile',0)"
+              />
+              Black Edition
+              <input
+                type="checkbox"
+                name="archfile"
+                value="Black Edition"
+                onclick="orderitem('archfile',0)"
+              />
+            </form>
+          </div>
+
+          <div class="billbook">
+            <form>
+              Bill Book 1
+              <input
+                type="checkbox"
+                name="items"
+                value="Bill Book 1"
+                onclick="orderitem('billbook', 1)"
+              />
+              Bill Book 2
+              <input
+                type="checkbox"
+                name="items"
+                value="Bill Book 2"
+                onclick="orderitem('billbook', 1)"
+              />
+              Bill Book 3
+              <input
+                type="checkbox"
+                name="items"
+                value="Bill Book 3"
+                onclick="orderitem('billbook', 1)"
+              />
+              Bill Book 4
+              <input
+                type="checkbox"
+                name="items"
+                value="Bill Book 4"
+                onclick="orderitem('billbook',1)"
+              />
+            </form>
+          </div>
+
+          <a href="orderpage.html">order page</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </div>
+      <button id="buttonClose" onclick="closeDiv()">
+        <i class="fas fa-times" onclick="CloseDiv()"></i>
+      </button>
+    </section>
+    <div id="testing"></div>
+    <script>
+      function ShowDiv() {
+        document.getElementById("slider").style.height = "auto";
+        document.getElementById("buttonClose").style.display = "block";
+      }
+      function closeDiv() {
+        document.getElementById("slider").style.height = "70px";
+        document.getElementById("buttonClose").style.display = "none";
+      }
+    </script>
+    <script>
+      function orderitem(items, index) {
+        document.getElementById("testing").innerHTML = items;
+        var toText = String(items);
+        var items = document.forms[index];
+        var txt = [];
+        for (i = 0; i < items.length; i++) {
+          if (items[i].checked) {
+            txt[i] = items[i].value;
+            sessionStorage.setItem(toText, JSON.stringify(txt));
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

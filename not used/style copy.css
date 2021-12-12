@@ -1,0 +1,977 @@
+/*------------all------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+* {
+  /*font-family: "Zen Kurenaido", sans-serif;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /*maybe make something broken*/
+}
+
+/*not functional*/
+.body-container {
+  background-color: whitesmoke;
+}
+
+/*---------------kimoya logo and text-----------------*/
+
+.kimoya {
+  background-color: white;
+  top: 0;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 50px;
+  padding: 40px 0px;
+  color: #e91e63;
+  text-align: center;
+}
+
+.kimoya a {
+  text-decoration: none;
+
+  top: 0;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 50px;
+  padding: 40px 0px;
+
+  text-align: center;
+}
+
+/*--------------navigation------------------------*/
+
+.navigation {
+  min-height: 4vh;
+  background-color: brown;
+}
+
+.navigation ul {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.navigation li {
+  color: white;
+  font-size: 20px;
+  margin: 0px 10px;
+  display: inline;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+  color: bisque;
+  /*
+  color: #e91e63;
+  */
+}
+
+.burger {
+  display: none;
+  float: right;
+}
+
+.burger div {
+  width: 25px;
+  height: 2.5px;
+  background-color: brown;
+  margin: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .kimoya img {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  .navigation {
+    background-color: whitesmoke;
+  }
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 600px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*---------------Slider---------------------*/
+
+/* Slideshow container , postion dia relative original*/
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+/* not used*/
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/* Not used */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* This one is not used */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*for preview */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgSlider {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.mySlides,
+.mySlidesSecond,
+.mySlidesThird {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*---------------product, shop, card--------------------------*/
+
+.shop {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.shop h1 {
+  text-align: center;
+  font-size: 40px;
+  color: brown;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 16.6%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1120px) {
+  .column {
+    font-size: 10px;
+  }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  .column {
+    width: 33%;
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 50%;
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.card img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+/*------------footer-------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 300px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/*--------------feautured product----------*/
+/*--------------top, right, bottom, left --------*/
+
+.featured-product {
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.featured-product h1 {
+  color: brown;
+}
+
+.featured-product-container {
+  background-color: whitesmoke;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.featured-product-container p {
+  padding-top: 5px;
+}
+
+.container-item {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  line-height: 50px;
+  margin: 10px 10px 40px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .featured-images {
+    width: 150px;
+    height: 150px;
+  }
+
+  .container-item p {
+    font-size: 11px;
+    color: black;
+  }
+
+  .container-item {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.container-item a {
+  font-size: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.container-item a:hover {
+  text-decoration: underline;
+  color: #e91e63;
+}
+
+/*---------------promotion--------------*/
+.promotion {
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.promotion h1 {
+  color: brown;
+}
+
+.promotion-container {
+  background-color: whitesmoke;
+}
+
+.promotion-container video {
+  width: 100%;
+  height: 500px;
+}
+
+@media only screen and (max-width: 900px) {
+  .promotion-container video {
+    height: auto;
+  }
+}
+
+/*-------------------About and Faq------------*/
+
+/*--------faq*-------*/
+
+.top-navigation {
+  background: #ffffff;
+  padding: 0 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 15px 15px rgb(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.top-navigation a {
+  padding: 1rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: brown;
+  width: 50vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.top-navigation .active {
+  color: #252525;
+  font-weight: bold;
+}
+
+.top-navigation .active:hover {
+  background: #f1f1f1;
+}
+
+.active-link {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 80px;
+  height: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.one-wrap {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background: #dfdfdf;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-navigation a {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+/*--------About--------*/
+
+.about-faq-content {
+  height: 100%;
+}
+
+#about-us {
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  justify-content: center;
+}
+
+.about-us-item {
+  background: white;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-us-item h1 {
+  padding-bottom: 10px;
+  color: brown;
+}
+
+.about-us-item p {
+  padding: 20px;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  justify-content: center;
+}
+
+.faq-item {
+  background: white;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.faq-item h4 {
+  background-color: #dfdfdf;
+}
+
+.faq-item p {
+  padding: 20px 50px;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+.faq-item h1 {
+  color: brown;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-us-item img {
+    width: 100%;
+    height: 200px;
+  }
+  .faq-item p {
+    padding: 20px 50px;
+    text-align: center;
+  }
+}
+
+/*------------contact us--------*/
+
+.contact-details {
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+  justify-content: center;
+  background: white;
+}
+
+.contact-us-container {
+  padding: 50px 0px;
+  margin: 5px;
+  color: black;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.top-container {
+  text-align: center;
+}
+
+.contact-us-container img {
+  width: 100px;
+  height: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-us {
+    flex-direction: column;
+  }
+
+  .contact-us-container {
+    font-size: 13px;
+  }
+}
+
+.contact-us-container img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+textarea {
+  resize: none;
+  margin-top: 10px;
+  height: 150px;
+  width: 50%;
+}
+
+/*--------contact, email letter------*/
+.subscribe-email,
+.question-email {
+  text-align: center;
+  margin: 20px;
+  background-color: white;
+  padding: 50px 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+  }
+}
+
+/*---------------product, our services------------*/
+.our-services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  padding: 40px;
+}
+
+.our-services h1 {
+  color: brown;
+}
+
+.our-services-item {
+  background-color: whitesmoke;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .our-services-item {
+    font-size: 20px;
+  }
+  .our-services {
+    flex-direction: column-reverse;
+  }
+  .our-services-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .our-services-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*------------------store policy, contact-----------*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  height: auto;
+  background-color: gainsboro;
+  padding: 20px;
+  margin: 5px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.store-policy h1 {
+  text-align: center;
+}
+
+.store-policy-top {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-item {
+    font-size: 13px;
+  }
+}
+
+/*--------------inside product pages--------*/
+#profile {
+  height: 100vh;
+}
+
+/*mungkin leh buang?*/
+#booking {
+  height: 100vh;
+}
+
+#reservation {
+  height: 100vh;
+}
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  width: 200px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+.product-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.product-view-item .prev,
+.product-view-item .next {
+  display: none;
+}
+
+.product-view-item {
+  flex-basis: 200px;
+  flex-grow: 1;
+  margin: 5px;
+}
+
+.product-view-item p {
+  padding-top: 20px;
+}
+
+.product-view .slideshow-container {
+  background-color: white;
+  border: solid 1px;
+  border-color: brown;
+}
+
+.product-view-item .slideshow-container img {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .product-view-item .slideshow-container img {
+    width: 350px;
+    height: 250px;
+  }
+  .product-view {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .product-view-item .slideshow-container {
+    max-width: 100vw;
+  }
+  .product-view-item .slideshow-container img {
+    width: 100%;
+  }
+}
+
+.product-top-sign {
+  text-align: center;
+  padding-top: 20px;
+}

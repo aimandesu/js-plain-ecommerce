@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script src="slide-script.js"></script>
+  </head>
+  <body>
+    <section class="kimoya">
+      <div>
+        <a href="home.html"
+          ><img
+            src="./Logo/kimoya1.png"
+            alt="kimoya"
+            width="600px"
+            height="200px"
+        /></a>
+      </div>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="home.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="ourteam.html">Our Team</a>
+          <a href="contact.html">Contact</a>
+          <a href="aboutfaq.html">About</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="ourteam.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutfaq.html">About</a></li>
+      </ul>
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            class="imgSlider"
+            src="img_nature_wide.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="imgSlider" src="img_snow_wide.jpg" style="width: 100%" />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            class="imgSlider"
+            src="img_mountains_wide.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="featured-product">
+        <h1>Featured Product</h1>
+        <div class="featured-product-container">
+          <div class="container-item">
+            <a href="./Product/bussinesscard.html#bussiness-card-5"
+              ><img
+                class="featured-images"
+                src="./Product/ProductImages/Bussiness card/bussiness5.png"
+                width="100%"
+                height="100%"
+              />
+              <p>Bussiness Card 5</p>
+            </a>
+          </div>
+          <div class="container-item">
+            <a href="./Product/buttonbadge.html#circle-badge"
+              ><img
+                class="featured-images"
+                src="./Product/ProductImages/Badge/circle button badge.jpg"
+                width="100%"
+                height="100%"
+              />
+              <p>Button Badge Circle</p>
+            </a>
+          </div>
+          <div class="container-item">
+            <a href="./Product/envelope.html#design-6"
+              ><img
+                class="featured-images"
+                src="./Product/ProductImages/Envelope/envelope6.png"
+                width="100%"
+                height="100%"
+              />
+              <p>Envelope Design 6</p>
+            </a>
+          </div>
+          <div class="container-item">
+            <a href="./Product/bookmark.html#bookmark-6"
+              ><img
+                class="featured-images"
+                src="./Product/ProductImages/Bookmark/bookmark6.png"
+                width="100%"
+                height="100%"
+              />
+              <p>Bookmark Design 6</p>
+            </a>
+          </div>
+        </div>
+        <div class="featured-product-container">
+          <div class="container-item">
+            <a href="./Product/folder.html#folder-1">
+              <img
+                class="featured-images"
+                src="./Product/ProductImages/Folder/folder1.png"
+                width="100%"
+                height="100%"
+              />
+              <p>Folder Design 1</p>
+            </a>
+          </div>
+          <div class="container-item">
+            <a href="./Product/booklet.html#booklet-2">
+              <img
+                class="featured-images"
+                src="./Product/ProductImages/Booklet/booklet2.png"
+                width="100%"
+                height="100%"
+              />
+              <p>Booklet Design 2</p>
+            </a>
+          </div>
+          <div class="container-item">
+            <a href="./Product/billbook.html#billbook-3">
+              <img
+                class="featured-images"
+                src="./Product/ProductImages/Bill Book/billbook3.png"
+                width="100%"
+                height="100%"
+              />
+              <p>Billbook Design 3</p>
+            </a>
+          </div>
+          <div class="container-item">
+            <a href="./Product/Lshapefolder.html#folder-1">
+              <img
+                class="featured-images"
+                src="./Product/ProductImages/LshapeFolder/folder1.png"
+                width="100%"
+                height="100%"
+              />
+              <p>L shape plastic folder 1</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="promotion">
+        <h1>Promotional Video</h1>
+        <div class="promotion-container">
+          <video>
+            <source src="./Video/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <!--
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      -->
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutfaq.html">about us</a></li>
+              <li><a href="product.html">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="aboutfaq.html">FAQ</a></li>
+              <li><a href="storepolicyandreturn.html#shipping">shipping</a></li>
+              <li><a href="storepolicyandreturn.html#return">returns</a></li>
+              <li><a href="storepolicyandreturn.html">store policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kimoyacard/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/kimoyacard/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Script for navigation mobile-->
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+    <!--script for slider-->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <script>
+      var videos = document.getElementsByTagName("video"),
+        fraction = 0.1;
+      function checkScroll() {
+        for (var i = 0; i < videos.length; i++) {
+          var video = videos[i];
+
+          var x = video.offsetLeft,
+            y = video.offsetTop,
+            w = video.offsetWidth,
+            h = video.offsetHeight,
+            r = x + w, //right
+            b = y + h, //bottom
+            visibleX,
+            visibleY,
+            visible;
+
+          visibleX = Math.max(
+            0,
+            Math.min(
+              w,
+              window.pageXOffset + window.innerWidth - x,
+              r - window.pageXOffset
+            )
+          );
+          visibleY = Math.max(
+            0,
+            Math.min(
+              h,
+              window.pageYOffset + window.innerHeight - y,
+              b - window.pageYOffset
+            )
+          );
+
+          visible = (visibleX * visibleY) / (w * h);
+
+          if (visible > fraction) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        }
+      }
+
+      window.addEventListener("scroll", checkScroll, false);
+      window.addEventListener("resize", checkScroll, false);
+    </script>
+  </body>
+</html>

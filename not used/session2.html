@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <a href="sessionSave.html">test</a>
+    <a href="session3.html">session3</a>
+    <div id="testing"></div>
+
+    <form>
+      <input
+        type="checkbox"
+        name="archfile"
+        value="Dusty Pink"
+        onclick="ordered()"
+      />
+      Dusty Pink
+      <input
+        type="checkbox"
+        name="archfile"
+        value="Fruit Edition"
+        onclick="ordered()"
+      />
+      Fruit Edition
+      <input
+        type="checkbox"
+        name="archfile"
+        value="Cupcake Design"
+        onclick="ordered()"
+      />
+      Cupcake Design
+      <input
+        onclick="ordered()"
+        type="checkbox"
+        name="archfile"
+        value="Black Edition"
+      />
+      Black Edition
+    </form>
+
+    <script>
+      function ordered() {
+        var archfile = document.forms[0];
+        var txt = [];
+        for (i = 0; i < archfile.length; i++) {
+          if (archfile[i].checked) {
+            txt[i] = archfile[i].value;
+            sessionStorage.setItem("archfile", JSON.stringify(txt));
+          }
+        }
+      }
+    </script>
+
+    <!--
+       var data = JSON.parse(sessionStorage.getItem("archfile"));
+      document.getElementById("testing").innerHTML = data;
+    -->
+  </body>
+</html>

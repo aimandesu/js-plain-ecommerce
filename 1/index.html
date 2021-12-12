@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <body>
+    <div
+      id="mySidenav"
+      class="w3-sidebar w3-bar-block w3-light-grey w3-card"
+      style="width: 130px"
+    >
+      <button
+        id="arch-file"
+        class="w3-bar-item w3-button tablink"
+        onclick="openCity(event, 'ArchFile'), closeNav()"
+      >
+        Arch File
+      </button>
+      <button
+        id="bill-book"
+        class="w3-bar-item w3-button tablink"
+        onclick="openCity(event, 'BillBook'), closeNav()"
+      >
+        Bill Book
+      </button>
+      <button
+        id="bussiness-card"
+        class="w3-bar-item w3-button tablink"
+        onclick="openCity(event, 'BussinessCard'), closeNav()"
+      >
+        Bussiness Card
+      </button>
+    </div>
+
+    <div id="main" style="margin-left: 130px">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;
+      </span>
+      <div id="ArchFile" class="w3-container city" style="display: none">
+        <div class="product-top-sign">
+          <img
+            src="../Images/Banner/archfile.png"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="product-page">
+          <div class="product-view" id="Dusty">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow1" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="../Product/ProductImages/ArchFile/dusty pink.png"
+                  />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow1)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Dusty Pink</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow2" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="../Product/ProductImages/ArchFile/fruit.png"
+                  />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow2)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Fruit Edition</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow3" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="../Product/ProductImages/ArchFile/cupcake.jpg"
+                  />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow3)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Cupcake Design</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow4" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="../Product/ProductImages/ArchFile/black.png"
+                  />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <div class="mySlides fade">
+                  <img class="imgSlider" src="" />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow4)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Black Edition</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div class="payment" style="flex-basis: 200px; flex-grow: 1">
+              <h1>Purchase link:</h1>
+              <a href="#"
+                ><img
+                  src="../Logo/whatsapp.png"
+                  width="40px"
+                  height="40px"
+                  alt="ws logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="BillBook" class="w3-container city" style="display: none">
+        <div class="product-top-sign">
+          <img
+            src="../Product/ProductImages/Bill Book/top.png"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="product-page">
+          <div class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow1" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="../Product/ProductImages/Bill Book/billbook1.png"
+                  />
+                </div>
+
+                <div class="mySlides fade"></div>
+
+                <div class="mySlides fade"></div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow1)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Bill Book 1</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow2" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="./ProductImages/Bill Book/billbook2.png"
+                  />
+                </div>
+
+                <div class="mySlides fade"></div>
+
+                <div class="mySlides fade"></div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow2)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Bill Book 2</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div id="billbook-3" class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow3" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="./ProductImages/Bill Book/billbook3.png"
+                  />
+                </div>
+
+                <div class="mySlides fade"></div>
+
+                <div class="mySlides fade"></div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow3)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Bill Book 3</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <div id="slideshow4" class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    class="imgSlider"
+                    src="./ProductImages/Bill Book/billbook4.png"
+                  />
+                </div>
+
+                <div class="mySlides fade"></div>
+
+                <div class="mySlides fade"></div>
+
+                <a class="prev" onclick="plusSlides(-1, slideshow4)"
+                  >&#10094;</a
+                >
+                <a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+              </div>
+            </div>
+            <div
+              class="product-view-item"
+              style="flex-basis: 200px; flex-grow: 1"
+            >
+              <h1>Bill Book 4</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
+                unde neque quibusdam autem excepturi quia tenetur voluptas totam
+                cupiditate inventore assumenda!
+              </p>
+              <p>price</p>
+            </div>
+          </div>
+          <div class="product-view">
+            <div class="payment" style="flex-basis: 200px; flex-grow: 1">
+              <h1>Purchase link:</h1>
+              <a href="#"
+                ><img
+                  src="../Logo/whatsapp.png"
+                  width="40px"
+                  height="40px"
+                  alt="ws logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="BussinessCard" class="w3-container city" style="display: none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+        <p>
+          It is the center of the Greater Tokyo Area, and the most populous
+          metropolitan area in the world.
+        </p>
+      </div>
+    </div>
+
+    <!--Open Tabs -->
+    <script>
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " w3-yellow",
+            ""
+          );
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " w3-yellow";
+      }
+    </script>
+
+    <!--Open hamburger menu-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "130px";
+        document.getElementById("main").style.marginLeft = "130px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <!--Slider js-->
+    <script src="../Product/SliderJs/product-slider.js"></script>
+    <!--Get Id to view-->
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      var call = urlParams.get("key");
+      var product = urlParams.get("product");
+      document.getElementById(call).click();
+      document.getElementById(product).scrollIntoView();
+    </script>
+  </body>
+</html>
