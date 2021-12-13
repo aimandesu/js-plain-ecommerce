@@ -27,10 +27,16 @@ function createForm() {
   my_order.name = "message";
   my_order.value = document.getElementById("input-order").value;
 
+  my_next = document.createElement("input");
+  my_next.type = "hidden";
+  my_next.name = "_next";
+  my_next.value = "https://kimoya-tester.herokuapp.com/thankpage.html";
+
   my_form.appendChild(my_email);
   my_form.appendChild(my_name);
   my_form.appendChild(my_location);
   my_form.appendChild(my_order);
+  my_next.appendChild(my_order);
   document.body.appendChild(my_form); //apenchild div lain
 
   my_form.submit();
