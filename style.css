@@ -762,15 +762,17 @@ textarea {
 
 /*--------contact, email letter------*/
 .subscribe-email,
-.question-email {
+.question-email,
+.order-submission {
   text-align: center;
   margin: 20px;
   background-color: #290849;
   padding: 50px 50px;
 }
 
-.subscribe-email,
-.question-email h1 {
+.subscribe-email h1,
+.question-email h1,
+.order-submission h1 {
   color: #ffd524;
 }
 

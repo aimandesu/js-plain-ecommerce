@@ -10,13 +10,13 @@ $dbconn = mysqli_connect($host, $user, $password, $database);
 
 //$dbconn = mysqli_connect('localhost', 'root', '','studentlabbook');
 
-$myEmail = $_POST['my-email'];
+$myNumber = $_POST['my-number'];
 $myName = $_POST['my-name'];
 $myLocation = $_POST['my-location'];
 $myOrder = $_POST['my-order'];
 
-$insert = "INSERT INTO Orders (emails, names, locations, orders) 
-VALUES ('$myEmail', '$myName', '$myLocation', '$myOrder')";
+$insert = "INSERT INTO Orders (names, numbers, locations, orders) 
+VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder')";
 $result = mysqli_query($dbconn, $insert)
 
 ?>

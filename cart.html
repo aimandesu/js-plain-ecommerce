@@ -117,44 +117,49 @@
           ></iframe>
           -->
           <!---->
-          <form
-            action="JS/order.php"
-            method="post"
-            onsubmit="createForm()"
-            target="_blank"
-          >
+          <div class="order-submission">
+            <div class="top-container">
+              <h1>Order Form</h1>
+            </div>
+            <form
+              action="JS/order.php"
+              method="post"
+              onsubmit="createForm()"
+              target="_blank"
+            >
             <input
-              id="input-email"
-              type="email"
-              name="my-email"
-              placeholder="Email Address"
-              required
-            />
+                id="input-name"
+                type="text"
+                name="my-name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                id="input-number"
+                type="text"
+                name="my-number"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                id="input-location"
+                type="text"
+                name="my-location"
+                placeholder="Your Location"
+                required
+              />
+              <input
+                id="input-order"
+                type="text"
+                name="my-order"
+                placeholder="Your Order"
+                required
+              />
+              <br />
+              <input type="submit" id="order-form" value="Submit"></input>
+            </form>
+          </div>
 
-            <input
-              id="input-name"
-              type="text"
-              name="my-name"
-              placeholder="Your Name"
-              required
-            />
-            <input
-              id="input-location"
-              type="text"
-              name="my-location"
-              placeholder="Your Location"
-              required
-            />
-            <input
-              id="input-order"
-              type="text"
-              name="my-order"
-              placeholder="Your Order"
-              required
-            />
-
-            <button type="submit" id="order-form">Send Order</button>
-          </form>
           <!--
           <button onclick="saveForm()">Save</button>
           <button onclick="editForm()">Edit</button>

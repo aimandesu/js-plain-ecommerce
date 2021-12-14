@@ -8,9 +8,9 @@ function createForm() {
   my_form.action = "JS/order.php";
 */
   my_email = document.createElement("input");
-  my_email.type = "email";
-  my_email.name = "email";
-  my_email.value = document.getElementById("input-email").value;
+  my_email.type = "text";
+  my_email.name = "number";
+  my_email.value = document.getElementById("input-number").value;
 
   my_name = document.createElement("input");
   my_name.type = "text";
@@ -36,7 +36,7 @@ function createForm() {
   my_form.appendChild(my_name);
   my_form.appendChild(my_location);
   my_form.appendChild(my_order);
-  my_next.appendChild(my_order);
+  my_form.appendChild(my_next);
   document.body.appendChild(my_form); //apenchild div lain
 
   my_form.submit();
