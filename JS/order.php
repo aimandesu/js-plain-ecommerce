@@ -1,4 +1,3 @@
-
 <?php
 
 $host = 'sql6.freemysqlhosting.net';
@@ -20,8 +19,5 @@ $myPrice = $_POST['product-value'];
 $insert = "INSERT INTO Orders (names, numbers, locations, orders, prices) 
 VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder', '$myPrice')";
 $result = mysqli_query($dbconn, $insert)
-
-echo "<script src='serverdb.js'></script>";
-echo "createForm()"
 
 ?>
