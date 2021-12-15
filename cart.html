@@ -138,7 +138,7 @@
                 id="input-number"
                 type="text"
                 name="my-number"
-                placeholder="Email Address"
+                placeholder="Your Phone No"
                 required
               />
               <input
@@ -156,6 +156,7 @@
                 required
               />
               <br />
+              <input type="hidden" name="product-value" id="hidden-value" >
               <input type="submit" id="order-form" value="Submit"></input>
             </form>
           </div>
@@ -215,6 +216,12 @@
       </div>
     </footer>
 
+    <script>
+      var hiddenVal = JSON.parse(sessionStorage.getItem("total-order"));
+      document.getElementById("hidden-value").value = hiddenVal;
+      console.log(hiddenVal)
+    </script>
+    
     <!--Script for order note-->
     <script src="JS/orderpage.js"></script>
     <!--Script for navigation mobile-->

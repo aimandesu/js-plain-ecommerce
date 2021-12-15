@@ -14,9 +14,10 @@ $myNumber = $_POST['my-number'];
 $myName = $_POST['my-name'];
 $myLocation = $_POST['my-location'];
 $myOrder = $_POST['my-order'];
+$myPrice = $_POST['product-value'];
 
-$insert = "INSERT INTO Orders (names, numbers, locations, orders) 
-VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder')";
+$insert = "INSERT INTO Orders (names, numbers, locations, orders, prices) 
+VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder', '$myPrice')";
 $result = mysqli_query($dbconn, $insert)
 
 ?>

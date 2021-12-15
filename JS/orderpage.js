@@ -461,9 +461,11 @@ function cart() {
       eachCart = [];
 
       if (price == 0) {
-        document.getElementById("order-price").innerHTML = "";
+        document.getElementById("order-price").innerHTML = "RM 0";
       } else {
         document.getElementById("order-price").innerHTML = "RM" + price;
+        //guna session utk tarik data from here, price value then guna this for form submit tu lol
+        sessionStorage.setItem("total-order", JSON.stringify(price));
       }
     }
   }
@@ -476,6 +478,8 @@ function add(buttonID, inputID) {
   //let btnadd = document.querySelector("#" + buttonID);
   input.value = parseInt(input.value) + 1;
   sessionStorage.setItem(inputID.toString(), input.value);
+
+  document.getElementById("go-order").style.display = "none";
 
   /*
   fetch(url).then((res) => {
@@ -494,4 +498,6 @@ function substract(buttonID, inputID) {
     input.value = parseInt(input.value) - 1;
     sessionStorage.setItem(inputID.toString(), input.value);
   }
+
+  document.getElementById("go-order").style.display = "none";
 }
