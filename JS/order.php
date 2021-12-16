@@ -1,3 +1,12 @@
+<html>
+    <script>
+        let myWindow;
+        function closeWin(){
+            myWindow.close();
+        }
+    </script>
+</html>
+
 <?php
 
 $host = 'sql6.freemysqlhosting.net';
@@ -19,5 +28,7 @@ $myPrice = $_POST['product-value'];
 $insert = "INSERT INTO Orders (names, numbers, locations, orders, prices) 
 VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder', '$myPrice')";
 $result = mysqli_query($dbconn, $insert)
+
+echo "<script>closeWin();</script>"
 
 ?>
