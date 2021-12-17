@@ -21,3 +21,4 @@ VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder', '$myPrice')";
 $result = mysqli_query($dbconn, $insert)
 
 ?>
+<script type="text/javascript">setTimeOut("window.close();", 10);</script>
