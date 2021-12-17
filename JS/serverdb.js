@@ -9,12 +9,12 @@ function createForm() {
 */
   my_email = document.createElement("input");
   my_email.type = "text";
-  my_email.name = "number";
+  my_email.name = "Number";
   my_email.value = document.getElementById("input-number").value;
 
   my_name = document.createElement("input");
   my_name.type = "text";
-  my_name.name = "name";
+  my_name.name = "Name";
   my_name.value = document.getElementById("input-name").value;
 
   my_location = document.createElement("input");
@@ -24,8 +24,13 @@ function createForm() {
 
   my_order = document.createElement("input");
   my_order.type = "text";
-  my_order.name = "message";
+  my_order.name = "Order";
   my_order.value = document.getElementById("input-order").value;
+
+  my_price = document.createElement("input");
+  my_price.type = "text";
+  my_price.name = "Price";
+  my_price.value = document.getElementById("hidden-value");
 
   my_next = document.createElement("input");
   my_next.type = "hidden";
@@ -36,6 +41,7 @@ function createForm() {
   my_form.appendChild(my_name);
   my_form.appendChild(my_location);
   my_form.appendChild(my_order);
+  my_form.appendChild(my_price);
   my_form.appendChild(my_next);
   document.body.appendChild(my_form); //apenchild div lain
 
