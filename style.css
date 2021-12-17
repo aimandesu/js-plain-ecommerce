@@ -9,6 +9,7 @@
   box-sizing: border-box;
   transition: all 0.3s ease; /*maybe make something broken*/
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /*not functional*/

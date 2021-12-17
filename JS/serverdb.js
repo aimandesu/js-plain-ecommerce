@@ -33,7 +33,7 @@ function createForm() {
   my_price = document.createElement("input");
   my_price.type = "text";
   my_price.name = "Price";
-  my_price.value = hiddenVal;
+  my_price.value = "RM" + hiddenVal;
 
   my_next = document.createElement("input");
   my_next.type = "hidden";
