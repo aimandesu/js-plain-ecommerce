@@ -6,9 +6,9 @@ $user = 'sql6458011';
 $password = 'iiAemBn5sc';
 
 
-//$dbconn = mysqli_connect($host, $user, $password, $database);
+$dbconn = mysqli_connect($host, $user, $password, $database);
 
-$dbconn = mysqli_connect('localhost', 'root', '','studentlabbook');
+//$dbconn = mysqli_connect('localhost', 'root', '','studentlabbook');
 
 $myNumber = $_POST['my-number'];
 $myName = $_POST['my-name'];
