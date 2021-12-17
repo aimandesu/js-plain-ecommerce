@@ -16,7 +16,7 @@ $myLocation = $_POST['my-location'];
 $myOrder = $_POST['my-order'];
 $myPrice = $_POST['product-value'];
 
-$insert = "INSERT INTO Orders (names, numbers, locations, orders, prices) 
+$insert = "INSERT INTO Orders (names, phoneNo, locations, orders, prices) 
 VALUES ('$myName', '$myNumber', '$myLocation', '$myOrder', '$myPrice')";
 $result = mysqli_query($dbconn, $insert);
 echo "<script>window.close();</script>";

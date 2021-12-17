@@ -1,0 +1,8 @@
+CREATE TABLE Orders (
+    No int not null auto_increment primary key,
+    names varchar(255),
+    phoneNo varchar(255),
+    locations varchar(255),
+    orders varchar(255),
+    prices double
+);
