@@ -27,10 +27,13 @@ function createForm() {
   my_order.name = "Order";
   my_order.value = document.getElementById("input-order").value;
 
+  //take price
+  var hiddenVal = JSON.parse(sessionStorage.getItem("total-order"));
+
   my_price = document.createElement("input");
   my_price.type = "text";
   my_price.name = "Price";
-  my_price.value = document.getElementById("hidden-value");
+  my_price.value = hiddenVal;
 
   my_next = document.createElement("input");
   my_next.type = "hidden";
