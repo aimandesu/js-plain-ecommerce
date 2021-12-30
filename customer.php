@@ -18,7 +18,12 @@
     $password = 'iiAemBn5sc';
     
     
-    $dbconn = mysqli_connect($host, $user, $password, $database);
+    $dbconn = new mysqli($host, $user, $password, $database);
+
+    if($dbconn->connect_error){
+      die("connection failed".$dbconn->connect_error);
+    }
+
     $sql = "SELECT 'No', names, phoneNo, locations, orders, prices FROM orders";
     $result = $dbconn->query($sql);
 
