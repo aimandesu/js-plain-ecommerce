@@ -1410,6 +1410,19 @@ td {
   color: #ecb602;
 }
 
+.thank-you {
+  font-size: 20px;
+  padding: 200px;
+  color: #ecb602;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .thank-you {
+    padding: 40px;
+  }
+}
+
 /*form order
 #order-form {
   display: none;

@@ -13,6 +13,7 @@ function orderitem(items, index) {
   for (i = 0; i < items.length; i++) {
     if (items[i].checked == true) {
       txt[i] = items[i].value;
+      console.log(txt);
     }
     sessionStorage.setItem(toText, JSON.stringify(txt.filter((x) => x)));
   }
@@ -37,16 +38,25 @@ function serializeCheckboxes(elements) {
 }
 
 function readCheckboxes() {
+  var itemChecked = [];
   var storage = sessionStorage.getItem("container"), //Your key
     container = storage ? JSON.parse(storage) : {};
 
   Object.keys(container).forEach(function (key) {
     var element = document.getElementById(key);
+    //console.log(key);
 
     if (element) {
       element.checked = container[key];
+      if (element.checked == true) {
+        console.log(element.id);
+        itemChecked.push(element.id);
+      }
     }
   });
+  console.log(itemChecked);
+  sessionStorage.setItem("checkBoxID", JSON.stringify(itemChecked));
+  console.log(JSON.parse(storage));
 }
 
 function save() {
@@ -56,6 +66,14 @@ function save() {
     countBoxes[i] = x;
   }
   var passKeyID = countBoxes;
+  console.log(passKeyID);
   var elements = getCheckboxItems(passKeyID);
+  console.log(elements);
   serializeCheckboxes(elements);
+}
+
+function addCart(type, id, num) {
+  document.getElementById(id).checked = true;
+  save();
+  orderitem(type, num);
 }
