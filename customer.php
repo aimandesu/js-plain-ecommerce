@@ -11,6 +11,7 @@
   </style>
   </head>
   <body>
+    <h1>hi lol</h1>
     <?php
     $host = 'sql6.freemysqlhosting.net';
     $database = 'sql6458011';
