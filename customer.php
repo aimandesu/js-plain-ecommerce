@@ -7,11 +7,19 @@
     th,
     td {
       border: 1px solid black;
+      background-color: white;
+    }
+    .class-body{
+      background-color: #55185d;
+    }
+    h1{
+      text-align: center;
+      color: #ecb602;
     }
   </style>
   </head>
-  <body>
-    <h1>hi lol</h1>
+  <body class="class-body">
+    <h1>Order Listing</h1>
     <?php
     $host = 'sql6.freemysqlhosting.net';
     $database = 'sql6458011';
@@ -25,7 +33,7 @@
       die("connection failed".$dbconn->connect_error);
     }
 
-    $sql = "SELECT 'No', names, phoneNo, locations, orders, prices FROM orders";
+    $sql = "SELECT No, names, phoneNo, locations, orders, prices FROM Orders";
     $result = $dbconn->query($sql);
 
     if($result->num_rows > 0){
