@@ -596,9 +596,9 @@ function cart() {
         deleteButton.style.marginLeft = "10px";
         deleteButton.onclick = function () {
           document.getElementById(itemsBought[item]).checked = false;
-          //save();
-          //deleteOrder(this.name, products[num].product);
-          //window.location.reload();
+          save();
+          deleteOrder(this.name, products[num].product);
+          window.location.reload();
         };
 
         //create hidden checkbox
@@ -606,7 +606,7 @@ function cart() {
         checkBox.type = "checkbox";
         checkBox.className = "boxes";
         checkBox.id = illiterateItem;
-        //checkBox.style.display = "none";
+        checkBox.style.display = "none";
 
         //create image
         var innerCart = document.createElement("div");
