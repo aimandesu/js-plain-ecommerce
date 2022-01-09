@@ -414,7 +414,7 @@ function order() {
 
       arrCopy.push(sendText);
       sessionStorage.setItem("notecopy", arrCopy.join("\r\n"));
-      document.getElementById("copybutton").style.display = "block";
+      //document.getElementById("copybutton").style.display = "block";
       document.getElementById("orderdetails").style.display = "block";
     }
   }
@@ -578,7 +578,16 @@ function cart() {
             sessionStorage.getItem(
               products[num].product + illiterateItem + "input"
             )
-          ) + 0;
+          ) + 1;
+
+        if (input.value > 1) {
+          input.value = JSON.parse(
+            sessionStorage.getItem(
+              products[num].product + illiterateItem + "input"
+            )
+          );
+        }
+
         //create button substract
         var buttonMinus = document.createElement("button");
         buttonMinus.id = products[num].product + illiterateItem + "subtract";
@@ -694,8 +703,8 @@ function substract(buttonID, inputID) {
   let input = document.querySelector("#" + inputID);
   //let btnsubs = document.querySelector("#" + buttonID);
 
-  if (input.value == 0 || input.value == null) {
-    input.value = 0;
+  if (input.value == 1) {
+    input.value = 1;
   } else {
     input.value = parseInt(input.value) - 1;
     sessionStorage.setItem(inputID.toString(), input.value);
