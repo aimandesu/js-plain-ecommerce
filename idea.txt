@@ -1,4 +1,0 @@
-nama, alamat, barang, harga akan dpt auto
-
-features -
-leh padam record, searh record,

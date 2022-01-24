@@ -1,8 +1,44 @@
 CREATE TABLE Orders (
     No int not null auto_increment primary key,
-    names varchar(255),
+    names varchar(50),
     phoneNo varchar(255),
     locations varchar(255),
     orders varchar(255),
-    prices double
+    prices double,
+    userid varchar(10),
+    FOREIGN KEY(userid) REFERENCES admin(userid)
 );
+
+CREATE TABLE Admin (
+    userid varchar(10) not null PRIMARY KEY,
+    password varchar(15) not null
+);
+
+
+//new one
+
+CREATE TABLE customer(
+    //customerid int not null auto_increment primary key,
+    names varchar(50) not null primary key,
+    phoneNo varchar(12) not null,
+    locations varchar (100) not null
+)
+
+CREATE TABLE admin(
+    adminid varchar(10) not null PRIMARY KEY,
+    password varchar(15) not null
+)
+
+
+CREATE TABLE orders(
+    No int not null auto_increment primary key,
+    orders varchar(255) not null,
+    prices double not null,
+    names varchar(50) not null,
+    adminid varchar(10),
+    status varchar (10),
+    FOREIGN KEY(names) REFERENCES customer(names),
+    FOREIGN KEY(adminid) REFERENCES admin(adminid)
+)
+
+

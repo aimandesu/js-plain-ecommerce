@@ -586,6 +586,11 @@ function cart() {
               products[num].product + illiterateItem + "input"
             )
           );
+        } else if (input.value == 1) {
+          sessionStorage.setItem(
+            products[num].product + illiterateItem + "input",
+            input.value
+          );
         }
 
         //create button substract

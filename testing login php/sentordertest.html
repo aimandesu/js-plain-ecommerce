@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form
+              action="order.php"
+              method="post"
+              
+            >
+            <input
+                id="input-name"
+                type="text"
+                name="my-name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                id="input-number"
+                type="text"
+                name="my-number"
+                placeholder="Your Phone No"
+                maxlength="12"
+                required
+              />
+              <input
+                id="input-location"
+                type="text"
+                name="my-location"
+                placeholder="Your Location"
+                required
+              />
+              <input
+                id="input-order"
+                type="hidden"
+                name="my-order"
+                placeholder="Your Order"
+                required
+              />
+              <br />
+              <input type="hidden" name="product-value" id="hidden-value" >
+              <input type="submit" id="order-form" value="Submit"></input>
+            </form>
+    </body>
+</html>
