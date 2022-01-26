@@ -11,7 +11,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'kimoya');
 
  $sql = "UPDATE orders SET status='$status', adminid='$adminID' WHERE No = '$orderID'";
  mysqli_query($conn, $sql);
- echo "<script> alert('Reservation Status Recorded')</script>";
+ echo "<script> alert('Order noted as delivered!')</script>";
  echo"<script>location.href='checkorder.php'</script>";
 
 ?>

@@ -1,38 +1,61 @@
-Congratulation! You have logged into password protected page. <a href="logout.php">Click here</a> to Logout.
-go to <a href="checkorder.php">check</a>
 <!DOCTYPE html>
 <html>
   <head>
     <title></title>
   <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      background-color: white;
-    }
-    .class-body{
-      background-color: #55185d;
-    }
-    h1{
-      text-align: center;
-      color: #ecb602;
-    }
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.class-body{
+  background-color: #55185d;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even), tr:nth-child(odd) {background-color: #f2f2f2;}
+
+h1{
+  text-align:center;
+  color: #ecb602;
+}
+
+a{
+  background-color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#right{
+  text-align: right;
+}
+
+a:hover{
+  background-color: #ecb602;
+}
+
+a:active{
+  color: #ffffff;
+}
+
   </style>
   </head>
   <body class="class-body">
-    <h1>Order Listing</h1>
+    
 
 <?php 
 session_start(); /* Starts the session */
-$test = $_SESSION['username'];
+
 if(isset($_SESSION['username'])){
+  $test = $_SESSION['username'];
+  echo"<a href='logout.php'>Log Out</a>";
+  echo"<a href='account.php'>Account</a>";
+  echo"<a id='right' href='checkorder.php'>Check New Order</a>";
+  echo "<h1>Order Listing</h1>";
   echo"<h1>$test</h1>";
 
-
-
-
-    
     $host = 'sql6.freemysqlhosting.net';
     $database = 'sql6458011';
     $user = 'sql6458011';
@@ -46,11 +69,12 @@ if(isset($_SESSION['username'])){
     }
 
     $sql = "SELECT orders.No, customer.names, customer.phoneNo, customer.locations, 
-    orders.orders, orders.prices FROM orders INNER JOIN customer where customer.names = orders.names AND orders.status ='done' order by orders.no ";
+    orders.orders, orders.prices FROM orders INNER JOIN customer where customer.names = orders.names AND orders.status ='done' order by orders.no";
     $result = $dbconn->query($sql);
 
     if($result->num_rows > 0){
-      echo "<table>
+      
+      echo "<div style='overflow-x: auto;'><table>
       <tr>
         <th>No</th>
         <th>Names</th>
@@ -69,12 +93,13 @@ if(isset($_SESSION['username'])){
         <td>".$row["orders"]."</td>
         <td>".$row["prices"]."</td></tr>";
       }
-      echo "</table>";
-
+      echo "</table></div>";
     }else{
-      echo "0 results";
+      echo "<h1>No completed order record.</h1>";
     }
     $dbconn-> close();
+  }else{
+    echo"<h1>Non Authorized Access</h1>";
   }
     ?>
   </body>

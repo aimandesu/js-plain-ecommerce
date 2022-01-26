@@ -2,11 +2,58 @@
   <head>
     <title></title>
   </head>
-  <body>
-      <h1>New Order</h1>
+  <style>
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.class-body{
+  background-color: #55185d;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even), tr:nth-child(odd) {background-color: #f2f2f2;}
+
+h1{
+  color: #ecb602;
+  
+}
+
+select{
+  margin-top: 17px;
+}
+
+a{
+  background-color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#right{
+  float: right;
+  padding: 10px;
+  top: 0;
+}
+
+a:hover{
+  background-color: #ecb602;
+  
+}
+
+a:active{
+  color: #ffffff;
+}
+
+  </style>
+  <body class="class-body">
+      
       <?php 
       session_start();
-
+      if(isset($_SESSION['username'])){
+        echo"<h1>New Order</h1>";
       $_SESSION['username'];
             $status = "process";
 
@@ -16,6 +63,7 @@
 
             $numResult = mysqli_num_rows($insertToQuery);
 
+            echo"<a id='right' href='customer.php'>Back</a>";
             if($numResult>=1){
               echo
               "<table>
@@ -26,11 +74,13 @@
                 <th>Location</th>
                 <th>Order</th>
                 <th>Price</th>
+                <th>Status</th>
+                <th>Option</th>
               </tr>";
               
               $sql = "SELECT orders.No, customer.names, customer.phoneNo, customer.locations, 
               orders.orders, orders.prices, orders.status FROM orders INNER JOIN customer where customer.names = orders.names AND orders.status ='process'  
-              LIMIT 0,10 ";
+              order by orders.no LIMIT 0,20 ";
               $result = $database-> query($sql);
 
               if($result-> num_rows > 0){
@@ -53,7 +103,7 @@
         
                     <select name='status'>
                     <option disabled selected>Select Status</option>
-                    <option value='done'>success</option>
+                    <option value='done'>Delivered</option>
                     </select>
                     
                     <button type='submit' id='submit'>submit</button>
@@ -74,9 +124,12 @@
 
             }
             else{
-              echo "<h1 style='color:rgb(221, 205, 235);'>No reservation left to submit</h1>";
-              echo "<a href='customer.php'>Go back</a>";
+              echo "<h1 style='color:rgb(221, 205, 235);'>No order left to submit</h1>";
+              
             }
+          }else{
+            echo"<h1>Non Authorized Access</h1>";
+          }
             ?>
   </body>
 </html>
