@@ -24,7 +24,8 @@ $test = $_SESSION['username'];
 
 if($username == $test ){
     $sql = "UPDATE admin SET adminid='$newusername', password='$password'
-    WHERE adminid='$newusername'";
+    WHERE adminid='$test'";
+     $_SESSION['username'] = $newusername;
     mysqli_query($dbconn, $sql);
     echo "<script> alert('Account details have been updated')</script>";
     echo"<script>location.href='customer.php'</script>";
