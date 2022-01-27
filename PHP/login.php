@@ -10,7 +10,7 @@ $password = 'llISE3uK1s'
 $database = 'sql6468310'
 $port = '3306'
  
-$dbconnect = mysqli_connect($host, $user, $password, $database, $port);
+$dbconnect = mysqli_connect($host, $user, $password, $database);
 
 if(isset($_POST['username'])){
     $username = $_POST['username'];
