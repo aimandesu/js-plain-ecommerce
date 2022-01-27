@@ -48,8 +48,8 @@ a:active{
 <?php 
 session_start(); /* Starts the session */
 
-
- 
+if(isset($_SESSION['username'])){
+  $test = $_SESSION['username'];
   echo"<a href='logout.php'>Log Out</a>";
   echo"<a href='account.php'>Account</a>";
   echo"<a id='right' href='checkorder.php'>Check New Order</a>";
@@ -98,7 +98,9 @@ session_start(); /* Starts the session */
       echo "<h1>No completed order record.</h1>";
     }
     $dbconn-> close();
-  
+  }else{
+    echo"<h1>Non Authorized Access</h1>";
+  }
     ?>
   </body>
 </html>
