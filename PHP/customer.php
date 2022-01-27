@@ -56,13 +56,13 @@ if(isset($_SESSION['username'])){
   echo "<h1>Order Listing</h1>";
   echo"<h1>$test</h1>";
 
-    $host = 'sql6.freemysqlhosting.net';
-    $database = 'sql6458011';
-    $user = 'sql6458011';
-    $password = 'iiAemBn5sc';
-    
+  $host = 'sql6.freemysqlhosting.net';
+  $database = 'sql6468310';
+  $user = 'sql6468310';
+  $password = 'llISE3uK1s';
   
-    $dbconn = new mysqli('localhost', 'root', '','kimoya');
+  
+  $dbconn = new mysqli($host, $user, $password, $database);
 
     if($dbconn->connect_error){
       die("connection failed".$dbconn->connect_error);

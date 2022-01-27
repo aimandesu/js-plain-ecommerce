@@ -57,9 +57,15 @@ a:active{
       $_SESSION['username'];
             $status = "process";
 
-            $database = mysqli_connect('localhost', 'root', '', 'kimoya');
+            $host = 'sql6.freemysqlhosting.net';
+$database = 'sql6468310';
+$user = 'sql6468310';
+$password = 'llISE3uK1s';
+
+
+$dbconn = new mysqli($host, $user, $password, $database);
             $check = "select status from orders where status = '$status'";
-            $insertToQuery = mysqli_query($database, $check);
+            $insertToQuery = mysqli_query($dbconn, $check);
 
             $numResult = mysqli_num_rows($insertToQuery);
 
@@ -81,7 +87,7 @@ a:active{
               $sql = "SELECT orders.No, customer.names, customer.phoneNo, customer.locations, 
               orders.orders, orders.prices, orders.status FROM orders INNER JOIN customer where customer.names = orders.names AND orders.status ='process'  
               order by orders.no LIMIT 0,20 ";
-              $result = $database-> query($sql);
+              $result = $dbconn-> query($sql);
 
               if($result-> num_rows > 0){
                 while($row = $result-> fetch_assoc()){

@@ -1,6 +1,12 @@
 <?php
 session_start();
-$dbconnect = mysqli_connect('localhost', 'root', '','kimoya');
+$host = 'sql6.freemysqlhosting.net';
+$database = 'sql6468310';
+$user = 'sql6468310';
+$password = 'llISE3uK1s';
+
+
+$dbconn = new mysqli($host, $user, $password, $database);
 
 if(isset($_POST['username'])){
     $username = $_POST['username'];
@@ -15,7 +21,7 @@ $test = $_SESSION['username'];
 if($username == $test ){
     $sql = "UPDATE admin SET adminid='$username', password='$password'
     WHERE adminid='$username'";
-    mysqli_query($dbconnect, $sql);
+    mysqli_query($dbconn, $sql);
     echo "<script> alert('Account details have been updated')</script>";
     echo"<script>location.href='customer.php'</script>";
 }else{
