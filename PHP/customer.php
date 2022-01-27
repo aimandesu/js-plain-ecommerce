@@ -48,7 +48,7 @@ a:active{
 <?php 
 session_start(); /* Starts the session */
 
-if(isset($_SESSION['username'])){
+//if(isset($_SESSION['username'])){
   $test = $_SESSION['username'];
   echo"<a href='logout.php'>Log Out</a>";
   echo"<a href='account.php'>Account</a>";
@@ -56,13 +56,14 @@ if(isset($_SESSION['username'])){
   echo "<h1>Order Listing</h1>";
   echo"<h1>$test</h1>";
 
-    $host = 'sql6.freemysqlhosting.net';
-    $database = 'sql6458011';
-    $user = 'sql6458011';
-    $password = 'iiAemBn5sc';
+  $host = 'sql6.freemysqlhosting.net'
+  $user = 'sql6468310'
+  $password = 'llISE3uK1s'
+  $database = 'sql6468310'
+  $port = '3306'
     
   
-    $dbconn = new mysqli('localhost', 'root', '','kimoya');
+    $dbconn = new mysqli($host, $user, $password, $database);
 
     if($dbconn->connect_error){
       die("connection failed".$dbconn->connect_error);
@@ -98,9 +99,9 @@ if(isset($_SESSION['username'])){
       echo "<h1>No completed order record.</h1>";
     }
     $dbconn-> close();
-  }else{
+  /*}else{
     echo"<h1>Non Authorized Access</h1>";
-  }
+  }*/
     ?>
   </body>
 </html>
