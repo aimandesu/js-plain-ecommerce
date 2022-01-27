@@ -62,7 +62,7 @@ if(isset($_SESSION['username'])){
     $password = 'iiAemBn5sc';
     
   
-    $dbconn = new mysqli($host, $user, $password, $database);
+    $dbconn = new mysqli('localhost', 'root', '','kimoya');
 
     if($dbconn->connect_error){
       die("connection failed".$dbconn->connect_error);

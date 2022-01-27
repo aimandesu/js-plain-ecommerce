@@ -1,16 +1,7 @@
 <?php
 session_start();
 
-//$dbconnect = mysqli_connect('localhost', 'root', '','kimoya');
-
-//new database as of 27/1
-$host = 'sql6.freemysqlhosting.net'
-$user = 'sql6468310'
-$password = 'llISE3uK1s'
-$database = 'sql6468310'
-$port = '3306'
- 
-$dbconn = new mysqli($host, $user, $password, $database);
+$dbconnect = mysqli_connect('localhost', 'root', '','kimoya');
 
 if(isset($_POST['username'])){
     $username = $_POST['username'];
@@ -23,7 +14,7 @@ if(isset($_POST['password'])){
 
 $login = "select * from admin where adminid = '$username' && password = '$password'";
 
-$result = mysqli_query($dbconn, $login);
+$result = mysqli_query($dbconnect, $login);
 
 $numResult = mysqli_num_rows($result);
 

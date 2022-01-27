@@ -8,17 +8,13 @@ $password = 'iiAemBn5sc';
 */
 
 
-//new database as of 27/1
-$host = 'sql6.freemysqlhosting.net'
-$user = 'sql6468310'
-$password = 'llISE3uK1s'
-$database = 'sql6468310'
-$port = '3306'
- 
+$host = 'sql6.freemysqlhosting.net';
+$database = 'sql6468310';
+$user = 'sql6468310';
+$password = 'llISE3uK1s';
 
-//$dbconn = mysqli_connect('localhost', 'root', '','kimoya');
 
-$dbconn = mysqli_connect($host, $user, $password, $database, $port);
+$dbconn = new mysqli($host, $user, $password, $database);
 
 $myNumber = $_POST['my-number'];
 $myName = $_POST['my-name'];
