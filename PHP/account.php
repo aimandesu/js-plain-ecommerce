@@ -73,15 +73,7 @@ if(isset($_SESSION['username'])){
       type='text'
       id='username'
       name='username'
-      placeholder='Account Id'
-      required
-    />
-    <br />
-    <input
-      type='text'
-      id='account'
-      name='account'
-      placeholder='Account Id'
+      placeholder='New account Id'
       required
     />
     <br />
