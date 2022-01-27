@@ -24,15 +24,13 @@ if($username == $test ){
     echo "<script> alert('Account details have been updated')</script>";
     $sql = "UPDATE admin SET adminid='$newaccount', password='$password'
     WHERE adminid='$username'";
-    echo "<script> alert('Account yi')</script>";
-    mysqli_query($dbconn, $sql);
-    echo "<script> alert('Accjjj')</script>";
     echo "<script> alert('Account details have been updated')</script>";
     echo"<script>location.href='customer.php'</script>";
 }else{
     echo "<script> alert('Wrong account details')</script>";
     echo"<script>location.href='account.php'</script>";
 }
-
+mysqli_query($dbconn, $sql);
+$_SESSION['username'] = $newaccount;
 
 ?>
