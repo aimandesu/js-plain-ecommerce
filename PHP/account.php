@@ -76,7 +76,7 @@ if(isset($_SESSION['username'])){
       placeholder='Old account Id'
       required
     />
-    <bt />
+    <br />
     <input
       type='text'
       id='newusername'
