@@ -79,7 +79,7 @@ if(isset($_SESSION['username'])){
     <bt />
     <input
       type='text'
-      id='username'
+      id='newusername'
       name='newusername'
       placeholder='New account Id'
       required
