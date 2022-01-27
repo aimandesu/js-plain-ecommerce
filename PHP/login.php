@@ -1,7 +1,16 @@
 <?php
 session_start();
 
-$dbconnect = mysqli_connect('localhost', 'root', '','kimoya');
+//$dbconnect = mysqli_connect('localhost', 'root', '','kimoya');
+
+//new database as of 27/1
+$host = 'sql6.freemysqlhosting.net'
+$user = 'sql6468310'
+$password = 'llISE3uK1s'
+$database = 'sql6468310'
+$port = '3306'
+ 
+$dbconnect = mysqli_connect($host, $user, $password, $database, $port);
 
 if(isset($_POST['username'])){
     $username = $_POST['username'];
