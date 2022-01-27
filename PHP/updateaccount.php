@@ -12,6 +12,10 @@ if(isset($_POST['username'])){
     $username = $_POST['username'];
 }
 
+if(isset($_POST['newusername'])){
+    $newusername = $_POST['newusername'];
+}
+
 if(isset($_POST['password'])){
     $password = $_POST['password'];
 }
@@ -19,7 +23,7 @@ if(isset($_POST['password'])){
 $test = $_SESSION['username'];
 
 if($username == $test ){
-    $sql = "UPDATE admin SET adminid='$username', password='$password'
+    $sql = "UPDATE admin SET adminid='$newusername', password='$password'
     WHERE adminid='$username'";
     mysqli_query($dbconn, $sql);
     echo "<script> alert('Account details have been updated')</script>";
