@@ -489,8 +489,15 @@ function cart() {
   var priceEach = 0;
   var u = document.getElementById("cart-overflow");
   //console.log(sessionStorage.getItem("checkBoxID"));
-  document.getElementById("no-order").innerHTML =
-    "<h1>No order has been recorded. Please go to shop to note your order.</h1>";
+
+  here = document.getElementById("no-order");
+  here.innerHTML =
+    "<br><h1>Empty Cart.</h1><br><p>Looks like you haven't added anything to your cart yet.</p><br>";
+
+  var noOrderImage = document.createElement("img");
+  noOrderImage.setAttribute("src", "../Logo/trolley.png");
+  here.appendChild(noOrderImage);
+  noOrderImage.style.width = "100px";
 
   for (let num = 0; num < products.length; num++) {
     var product = JSON.parse(
