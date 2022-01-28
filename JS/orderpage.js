@@ -28,7 +28,7 @@ var products = [
   {
     product: "bussinesscard",
     name: "Bussiness Card",
-    bussinesscard1: 100,
+    bussinesscard1: 10,
     bussinesscard2: 1,
     bussinesscard3: 1,
     bussinesscard4: 1,
@@ -613,7 +613,7 @@ function cart() {
         deleteButton.id = products[num].product + illiterateItem + "delete";
         deleteButton.name = testbor;
         console.log(illiterateItem);
-        deleteButton.innerHTML = "Delete";
+        deleteButton.innerHTML = "Remove";
         deleteButton.style.marginLeft = "10px";
         deleteButton.onclick = function () {
           document.getElementById(itemsBought[item]).checked = false;
