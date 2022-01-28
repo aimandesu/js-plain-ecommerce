@@ -1412,7 +1412,8 @@ td {
 
 .thank-you {
   font-size: 20px;
-  padding: 200px;
+  padding: 100px;
+  padding-top: 50px;
   color: #ecb602;
   text-align: center;
 }
