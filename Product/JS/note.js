@@ -76,4 +76,5 @@ function addCart(type, id, num) {
   document.getElementById(id).checked = true;
   save();
   orderitem(type, num);
+  alert("Item added to cart");
 }
