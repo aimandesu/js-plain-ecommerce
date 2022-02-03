@@ -30,5 +30,5 @@ if (!JSON.parse(sessionStorage.getItem(hasLoad))) {
     document.getElementById("firstclick").click();
     loadTrue = true;
     sessionStorage.setItem(hasLoad, JSON.stringify(loadTrue));
-  }, 2000);
+  }, 2500);
 }
