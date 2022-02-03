@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.overlay {
+.subs {
   position: fixed;
   overflow-y: scroll;
   top: 0;
@@ -21,24 +21,27 @@
 
 /* this code is not strictly necessary: just to make this demo a bit pleasant */
 
-.overlay div {
+.subs div {
   margin: 15vh auto;
   width: 80%;
   max-width: 650px;
   padding: 30px;
-  min-height: 200vh;
-  background: rgba(255, 255, 255, 0.95);
+  min-height: 30vh;
+  background: #ecb602;
+  /*background: rgba(255, 255, 255, 0.95);*/
 }
-.overlay {
+.subs {
   background: rgba(40, 40, 40, 0.75);
 }
 
 * {
   box-sizing: border-box;
 }
-button {
-  padding: 1.5em 4em;
+.subs button {
+  padding: 1em 1em;
   cursor: pointer;
+  float: right;
+  border: none;
 }
 pre {
   background: #fafafa;
@@ -47,4 +50,22 @@ pre {
 }
 pre + p {
   margin: 5vh 0;
+}
+
+.subs h1 {
+  font-size: 2em;
+  color: #55185d;
+}
+
+.subs p {
+  color: #55185d;
+  font-size: 1.2em;
+}
+
+.subs i {
+  font-size: 17px;
+}
+
+.subs input[type="submit"] {
+  cursor: pointer;
 }

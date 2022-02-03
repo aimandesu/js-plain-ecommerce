@@ -1329,7 +1329,6 @@ td {
   flex-wrap: wrap;
   /*border: 1px solid #ecb602;*/
   color: #ecb602;
-  height: 100vh;
 }
 
 #view-column {
@@ -1339,8 +1338,6 @@ td {
 #cart-overflow {
   display: flex;
   overflow-x: auto;
-
-  height: 100vh;
 }
 
 .inner-cart {
@@ -1358,7 +1355,7 @@ td {
   flex-basis: 800px;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1200px) {
   .cart-view img {
     width: 200px;
     height: 140px;
@@ -1438,82 +1435,3 @@ td {
   display: none;
 }
 */
-
-/***Subscribe that is pop up*************/
-/* to the body element */
-.noscroll {
-  overflow: hidden;
-}
-
-.subs {
-  position: fixed;
-  overflow-y: scroll;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-[aria-hidden="true"] {
-  display: none;
-}
-[aria-hidden="false"] {
-  display: block;
-}
-
-/* this code is not strictly necessary: just to make this demo a bit pleasant */
-
-.subs div {
-  margin: 15vh auto;
-  width: 80%;
-  max-width: 650px;
-  padding: 30px;
-  min-height: 20vh;
-  background: #55185d;
-  /*background: rgba(255, 255, 255, 0.95);*/
-}
-.subs {
-  background: rgba(40, 40, 40, 0.75);
-}
-
-* {
-  box-sizing: border-box;
-}
-.subs button {
-  padding: 1em 1em;
-  cursor: pointer;
-  float: right;
-  border: none;
-}
-pre {
-  background: #fafafa;
-  padding: 15px;
-  border: 1px #ccd dashed;
-}
-pre + p {
-  margin: 5vh 0;
-}
-
-.subs h1 {
-  font-size: 2em;
-  color: #ecb602;
-}
-
-.subs p {
-  color: #ecb602;
-  font-size: 1.2em;
-}
-
-.subs i {
-  font-size: 17px;
-}
-
-.subs input[type="submit"] {
-  cursor: pointer;
-}
-
-.subs h1,
-.subs p,
-.subs form {
-  margin-top: 10px;
-}

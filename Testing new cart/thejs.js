@@ -8,10 +8,10 @@ var products = [
     fruitedition: 1,
     cupcakedesign: 1,
     blackedition: 20,
-    dustypinkpic: "./Product/ProductImages/ArchFile/dusty pink.png",
-    fruiteditionpic: "./Product/ProductImages/ArchFile/fruit.png",
-    cupcakedesignpic: "./Product/ProductImages/ArchFile/cupcake.jpg",
-    blackeditionpic: "./Product/ProductImages/ArchFile/black.png",
+    dustypinkpic: "../Product/ProductImages/ArchFile/dusty pink.png",
+    fruiteditionpic: "../Product/ProductImages/ArchFile/fruit.png",
+    cupcakedesignpic: "../Product/ProductImages/ArchFile/cupcake.jpg",
+    blackeditionpic: "../Product/ProductImages/ArchFile/black.png",
   },
   {
     product: "billbook",
@@ -20,10 +20,10 @@ var products = [
     billbook2: 1,
     billbook3: 1,
     billbook4: 4,
-    billbook1pic: "./Product/ProductImages/Bill Book/billbook1.png",
-    billbook2pic: "./Product/ProductImages/Bill Book/billbook2.png",
-    billbook3pic: "./Product/ProductImages/Bill Book/billbook3.png",
-    billbook4pic: "./Product/ProductImages/Bill Book/billbook4.png",
+    billbook1pic: "../Product/ProductImages/Bill Book/billbook1.png",
+    billbook2pic: "../Product/ProductImages/Bill Book/billbook2.png",
+    billbook3pic: "../Product/ProductImages/Bill Book/billbook3.png",
+    billbook4pic: "../Product/ProductImages/Bill Book/billbook4.png",
   },
   {
     product: "bussinesscard",
@@ -487,7 +487,7 @@ function cart() {
   let eachItem = [];
   var price = 0;
   var priceEach = 0;
-  var u = document.getElementById("cart-overflow");
+
   //console.log(sessionStorage.getItem("checkBoxID"));
 
   here = document.getElementById("no-order");
@@ -498,10 +498,6 @@ function cart() {
   noOrderImage.setAttribute("src", "../Logo/trolley.png");
   here.appendChild(noOrderImage);
   noOrderImage.style.width = "100px";
-
-  //aku tmbh new this one works somehow lol
-  cartWhenEmpty = document.getElementById("view-column").style.flexBasis =
-    "50px";
 
   for (let num = 0; num < products.length; num++) {
     var product = JSON.parse(
@@ -540,17 +536,14 @@ function cart() {
       var tdFirst = document.createElement("td");
       var tdSecond = document.createElement("td");
       var tdThird = document.createElement("td");
-      var br = document.createElement("br");
+
       var tdItems = document.createElement("div");
-      tdItems.id = products[num].product + "items";
+
       var tdCart = document.createElement("div");
       tdCart.id = products[num].product + "cart";
       var tdPrice = document.createElement("div");
       tdPrice.id = products[num].product + "price";
 
-      //append the child
-      tdFirst.appendChild(tdItems);
-      tdSecond.appendChild(br);
       tdSecond.appendChild(tdCart);
       tdThird.appendChild(tdPrice);
       takeTrID.appendChild(tdFirst);
@@ -620,19 +613,18 @@ function cart() {
         deleteButton.innerHTML = "Remove";
         deleteButton.style.marginLeft = "10px";
         deleteButton.onclick = function () {
-          //document.getElementById(itemsBought[item]).checked = false;
-          //save();
+          document.getElementById(itemsBought[item]).checked = false;
+          save();
           deleteOrder(this.name, products[num].product);
           window.location.reload();
         };
 
-        /*create hidden checkbox
+        //create hidden checkbox
         var checkBox = document.createElement("input");
         checkBox.type = "checkbox";
         checkBox.className = "boxes";
         checkBox.id = illiterateItem;
         checkBox.style.display = "none";
-        */
 
         //create image
         var innerCart = document.createElement("div");
@@ -640,6 +632,8 @@ function cart() {
         var imageArr = products[num][illiterateItem + "pic"];
         var innerImage = document.createElement("img");
         innerImage.setAttribute("src", imageArr);
+        innerImage.style.width = "80px";
+        innerImage.style.height = "80px";
         var productName = document.createElement("h1");
         productName.appendChild(document.createTextNode(illiterateItem));
         //innerImage.id = products[num].product + illiterateItem + "pic";
@@ -653,11 +647,10 @@ function cart() {
         div.appendChild(input);
         div.appendChild(buttonAdd);
         div.appendChild(deleteButton);
-        //div.appendChild(checkBox);
+        div.appendChild(checkBox);
+        div.style.paddingTop = "81px";
         objTo.appendChild(div);
-        u.appendChild(innerCart);
-        console.log(u);
-
+        tdFirst.appendChild(innerCart);
         //here need something confirmation if nk add product sama or not, priceChanges ni
 
         eachItem.push(priceChanges * input.value);
@@ -673,11 +666,9 @@ function cart() {
 
       if (priceEach > 0) {
         document.getElementById(
-          products[num].product.toString() + "items"
-        ).innerHTML = products[num].name + "<br>" + eachCart.join("<br>");
-        document.getElementById(
           products[num].product.toString() + "price"
-        ).innerHTML = "<br>RM" + eachItem.join("<br>RM");
+        ).innerHTML =
+          "<br><br><br>RM" + eachItem.join("<br><br><br><br><br>RM");
       } else if (product.length == 0) {
         document.getElementById(
           products[num].product.toString() + "details"

@@ -58,6 +58,14 @@
       </div>
     </section>
     <section class="body-container">
+      <button
+        type="button"
+        id="firstclick"
+        class="open-subs"
+        style="display: none"
+      >
+        Open
+      </button>
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img
@@ -193,6 +201,27 @@
         <i class="fas fa-angle-double-up"></i>
       </button>
     </section>
+    <section class="subs" aria-hidden="true">
+      <div>
+        <h1>
+          Subscribe to newsletter
+          <button type="button" class="close-subs">
+            <i class="fas fa-times"></i>
+          </button>
+        </h1>
+        <p>
+          Subscribe to our newsletter for promotions, news, events and partake
+          in our lucky draw whenever we held it!
+        </p>
+        <form
+          action="https://formsubmit.co/aimanafiqbinesam@gmail.com"
+          method="post"
+        >
+          <input type="email" name="Email" placeholder="Email Address" />
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -245,5 +274,6 @@
     <script src="JS/video.js"></script>
     <!--Script for button up -->
     <script src="JS/buttonup.js"></script>
+    <script src="JS/overlay-subscribe.js"></script>
   </body>
 </html>
