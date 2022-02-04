@@ -58,9 +58,9 @@ a:active{
             $status = "process";
 
             $host = 'sql6.freemysqlhosting.net';
-$database = 'sql6468310';
-$user = 'sql6468310';
-$password = 'llISE3uK1s';
+$database = 'sql6470270';
+$user = 'sql6470270';
+$password = 'Wkv4wJeVBY';
 
 
 $dbconn = new mysqli($host, $user, $password, $database);
