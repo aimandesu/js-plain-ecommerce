@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kimoya Thank You</title>
+    <meta
+      name="description"
+      content="Kimoya Thank You is to give appreciation to customers after customers has decided to order to product."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="kimoya">
+      <div>
+        <a href="home.html"
+          ><img
+            src="./Logo/kimoya1.png"
+            alt="kimoya"
+            width="600px"
+            height="200px"
+        /></a>
+      </div>
+    </section>
+    <section class="navigation">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="home.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact</a>
+          <a href="aboutfaq.html">About</a>
+          <a href="orderpage.html">Order</a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutfaq.html">About</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+      </ul>
+      <div
+        class="burger"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </section>
+    <section id="cart-popup" class="cart-popup">
+      <div>
+        <h4 class="line">
+          JUST ADDED TO YOUR CART <i class="fas fa-times"></i>
+        </h4>
+        <div class="cartimg-container">
+          <img src="Product/ProductImages/ArchFile/black.png" alt="" />
+          <p>Black Edition</p>
+        </div>
+        <div class="cart-box">
+          <a href="orderpage.html"><h3>View Cart</h3></a>
+        </div>
+      </div>
+    </section>
+    <section class="body-container">
+      <div class="thank-you">
+        <img src="Logo/signboard.png" width="300px" height="300px" alt="" />
+        <h1>Thank you for the order!</h1>
+        <h1>We will contact you soon for payment enquires.</h1>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutfaq.html">about us</a></li>
+              <li><a href="product.html">our services</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="storepolicyandreturn.html#shipping"
+                  >shipping and returns</a
+                >
+              </li>
+
+              <li><a href="storepolicyandreturn.html">store policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="how-to-order.html">How to order</a></li>
+              <li><a href="paymentoptions.html">Payment Options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/kimoyacard/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/kimoyacard/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Script for navigation mobile-->
+    <script src="JS/navmobile.js"></script>
+    <!--Script for button up -->
+    <script src="JS/buttonup.js"></script>
+  </body>
+</html>

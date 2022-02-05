@@ -1521,3 +1521,55 @@ pre + p {
 .subs form {
   margin-top: 10px;
 }
+
+.cart-popup {
+  z-index: 99;
+  width: 300px;
+  position: fixed;
+  background-color: #55185d;
+  top: 0px;
+  right: 0px;
+}
+
+.cart-popup img {
+  width: 50px;
+  height: 50px;
+}
+
+.cartimg-container {
+  padding: 10px;
+}
+
+.cart-popup h4 {
+  font-size: 15px;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  width: auto;
+}
+
+.cart-popup i {
+  font-size: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.cartimg-container p {
+  color: #ecb602;
+  position: fixed;
+  top: 65px;
+  right: 100px;
+}
+
+.cart-box {
+  text-align: center;
+  padding: 5px;
+  border: 5px solid #55185d;
+  background-color: #ecb602;
+  color: #55185d;
+}
+
+.cart-box a {
+  text-decoration: none;
+  color: #55185d;
+}

@@ -72,9 +72,69 @@ function save() {
   serializeCheckboxes(elements);
 }
 
-function addCart(type, id, num) {
+function cartpop(productName, src) {
+  var target = document.getElementById("cart-popup");
+  target.style.border = "1px solid whitesmoke";
+  var cartnoti = document.createElement("div");
+  var topCart = document.createElement("h4");
+  topCart.className = "line";
+  topCart.innerHTML = "JUST ADDED TO YOUR CART";
+  //var cross = document.createElement("i");
+  //cross.className = "fas fa-times";
+
+  //cartimg-container
+  var cartimg = document.createElement("div");
+  cartimg.className = "cartimg-container";
+  var productImg = document.createElement("img");
+  productImg.setAttribute("src", src);
+  var product = document.createElement("p");
+  product.innerHTML = productName;
+  cartimg.appendChild(productImg);
+  cartimg.appendChild(product);
+
+  /*cart box
+  var cartbox = document.createElement("div");
+  cartbox.className = "cart-box";
+  var aLink = document.createElement("a");
+  aLink.setAttribute("href", "../orderpage.html");
+  var viewCart = document.createElement("h3");
+  viewCart.innerHTML = "View Cart";
+  aLink.appendChild(viewCart);
+  cartbox.appendChild(aLink);
+*/
+  //topCart.appendChild(cross);
+  cartnoti.appendChild(topCart);
+  cartnoti.appendChild(cartimg);
+  //cartnoti.appendChild(cartbox);
+  target.appendChild(cartnoti);
+
+  setTimeout(function () {
+    cartnoti.remove();
+    target.style.border = "none";
+  }, 1000);
+}
+
+function addCart(type, id, num, src) {
   document.getElementById(id).checked = true;
   //save();
   orderitem(type, num);
-  alert("Item added to cart");
+  cartpop(id, src);
+  //alert("Item added to cart");
 }
+
+/*
+function addCart(type, id, num, src) {
+  if (window.innerWidth > 800) {
+    document.getElementById(id).checked = true;
+    //save();
+    orderitem(type, num);
+    cartpop(id, src);
+  } else {
+    document.getElementById(id).checked = true;
+    //save();
+    orderitem(type, num);
+
+    alert("Item added to cart");
+  }
+}
+*/

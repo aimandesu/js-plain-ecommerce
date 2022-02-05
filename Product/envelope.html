@@ -53,6 +53,7 @@
         <div class="line3"></div>
       </div>
     </section>
+    <section id="cart-popup" class="cart-popup"></section>
     <section class="body-container">
       <div class="product-top-sign">
         <img
@@ -88,7 +89,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 1</h1>
+            <h1>Envelope 1</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -96,6 +97,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('envelope','envelope1', 0, './ProductImages/Envelope/envelope1.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -123,7 +126,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 2</h1>
+            <h1>Envelope 2</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -131,6 +134,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('envelope','envelope2', 0, 'ProductImages/Envelope/envelope2.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -158,7 +163,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 3</h1>
+            <h1>Envelope 3</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -166,6 +171,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('envelope','envelope3', 0, 'ProductImages/Envelope/envelope3.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -193,7 +200,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 4</h1>
+            <h1>Envelope 4</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -201,6 +208,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('envelope','envelope4', 0, 'ProductImages/Envelope/envelope4.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -228,7 +237,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 5</h1>
+            <h1>Envelope 5</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -236,6 +245,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('envelope','envelope5', 0, 'ProductImages/Envelope/envelope5.png')">Add to cart</button>
           </div>
         </div>
         <div id="design-6" class="product-view">
@@ -263,7 +274,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 6</h1>
+            <h1>Envelope 6</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -271,8 +282,77 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('envelope','envelope6', 0, 'ProductImages/Envelope/envelope6.png')">Add to cart</button>
           </div>
         </div>
+      </div>
+      <div class="note-each vertical" id="envelope">
+        <h2><a href="./envelope.html?key=envelope">Envelope</a></h2>
+        <div class="note-each horizontal">
+          <div class="note-each-item"><form>
+            Design 1
+            <input
+            type="checkbox"
+            class="boxes"
+            id="envelope1"
+            value="Envelope 1"
+            onclick="orderitem('envelope', 0)"
+          />
+          </div>
+          <div class="note-each-item">
+            Design 2
+            <input
+            type="checkbox"
+            class="boxes"
+            id="envelope2"
+            value="Envelope 2"
+            onclick="orderitem('envelope', 0)"
+          />
+          </div>
+          <div class="note-each-item">
+            Design 3
+            <input
+            type="checkbox"
+            class="boxes"
+            id="envelope3"
+            value="Envelope 3"
+            onclick="orderitem('envelope', 0)"
+          />
+          </div>
+          <div class="note-each-item">
+            Design 4
+            <input
+            type="checkbox"
+            class="boxes"
+            id="envelope4"
+            value="Envelope 4"
+            onclick="orderitem('envelope', 0)"
+          />
+          </div>
+          <div class="note-each-item">
+            Design 5
+            <input
+            type="checkbox"
+            class="boxes"
+            id="envelope5"
+            value="Envelope 5"
+            onclick="orderitem('envelope', 0)"
+          />
+          </div>
+          <div class="note-each-item">
+            Design 6
+            <input
+            type="checkbox"
+            class="boxes"
+            id="envelope6"
+            value="Envelope 6"
+            onclick="orderitem('envelope', 0)"
+          />
+          </div>
+        </form>
+        </div>
+        
       </div>
     </section>
     <footer class="footer">
