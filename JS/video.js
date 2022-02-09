@@ -43,3 +43,27 @@ function checkScroll() {
 
 window.addEventListener("scroll", checkScroll, false);
 window.addEventListener("resize", checkScroll, false);
+
+document
+  .getElementById("book-video")
+  .addEventListener("mouseover", function () {
+    this.play();
+  });
+
+document
+  .getElementById("love-video")
+  .addEventListener("mouseover", function () {
+    this.play();
+  });
+
+document.getElementById("bag-video").addEventListener("mouseover", function () {
+  this.play();
+});
+
+document
+  .getElementById("office-video")
+  .addEventListener("mouseover", function () {
+    this.play();
+  });
+
+//document.getElementById("collection-video").loop = true;

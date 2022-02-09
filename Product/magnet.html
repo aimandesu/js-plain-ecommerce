@@ -53,6 +53,7 @@
         <div class="line3"></div>
       </div>
     </section>
+    <section id="cart-popup" class="cart-popup"></section>
     <section class="body-container">
       <div class="product-top-sign">
         <img
@@ -96,6 +97,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('magnet','magnet1', 0, './ProductImages/Magnet/magnet1.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -131,6 +134,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('magnet','magnet2', 0, 'ProductImages/Magnet/magnet2.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -166,6 +171,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('magnet','magnet3', 0, './ProductImages/Magnet/magnet3.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -201,8 +208,57 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('magnet','magnet4', 0, './ProductImages/Magnet/magnet4.png')">Add to cart</button>
           </div>
         </div>
+      </div>
+      <div class="note-each vertical" id="magnet">
+        <h2><a href="./magnet.html?key=magnet">Magnet</a></h2>
+        <div class="note-each horizontal">
+          <div class="note-each-item"><form>
+            Magnet 1
+            <input
+            type="checkbox"
+            class="boxes"
+            id="magnet1"
+            value="Magnet 1"
+            onclick="orderitem('magnet', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Magnet 2
+            <input
+            type="checkbox"
+            class="boxes"
+            id="magnet2"
+            value="Magnet 2"
+            onclick="orderitem('magnet', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Magnet 3
+            <input
+            type="checkbox"
+            class="boxes"
+            id="magnet3"
+            value="Magnet 3"
+            onclick="orderitem('magnet', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Magnet 4
+            <input
+            type="checkbox"
+            class="boxes"
+            id="magnet4"
+            value="Magnet 4"
+            onclick="orderitem('magnet', 0)"
+            />
+          </div>
+        </form>
+        </div>
+        
       </div>
     </section>
     <footer class="footer">

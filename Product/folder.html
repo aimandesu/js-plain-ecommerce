@@ -53,6 +53,7 @@
         <div class="line3"></div>
       </div>
     </section>
+    <section id="cart-popup" class="cart-popup"></section>
     <section class="body-container">
       <div class="product-top-sign">
         <img
@@ -93,6 +94,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('folder','folder1', 0, 'ProductImages/Folder/folder1.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -125,6 +128,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('folder','folder2', 0, 'ProductImages/Folder/folder2.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -157,8 +162,47 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('folder','folder3', 0, 'ProductImages/Folder/folder3.png')">Add to cart</button>
           </div>
         </div>
+      </div>
+      <div class="note-each vertical" id="folder">
+        <h2><a href="./folder.html?key=folder">Folder</a></h2>
+        <div class="note-each horizontal">
+          <div class="note-each-item"><form>
+            Folder 1
+            <input
+            type="checkbox"
+            class="boxes"
+            id="folder1"
+            value="Folder 1"
+            onclick="orderitem('folder', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Folder 2
+            <input
+            type="checkbox"
+            class="boxes"
+            id="folder2"
+            value="Folder 2"
+            onclick="orderitem('folder', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Folder 3
+            <input
+            type="checkbox"
+            class="boxes"
+            id="folder3"
+            value="Folder 3"
+            onclick="orderitem('folder', 0)"
+            />
+          </div>
+        </form>
+        </div>
+        
       </div>
     </section>
     <footer class="footer">
