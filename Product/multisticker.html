@@ -53,6 +53,7 @@
         <div class="line3"></div>
       </div>
     </section>
+    <section id="cart-popup" class="cart-popup"></section>
     <section class="body-container">
       <div class="product-top-sign">
         <img
@@ -88,7 +89,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 1</h1>
+            <h1>Multi sticker 1</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -96,6 +97,13 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('multisticker','multisticker1', 0, './ProductImages/MultiSticker/design1.png')"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -123,7 +131,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 2</h1>
+            <h1>Multi sticker 2</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -131,6 +139,13 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('multisticker','multisticker2', 0, './ProductImages/MultiSticker/design2.png')"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -158,7 +173,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 3</h1>
+            <h1>Multi Sticker 3</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -166,6 +181,13 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('multisticker','multisticker3', 0, './ProductImages/MultiSticker/design3.png')"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -193,7 +215,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 4</h1>
+            <h1>Multi Sticker 4</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -201,8 +223,62 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('multisticker','multisticker4', 0, './ProductImages/MultiSticker/design4.png')"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
+      </div>
+      <div class="note-each vertical" id="multisticker">
+        <h2><a href="./multisticker.html?key=multisticker">Multi Purpose Sticker</a></h2>
+        <div class="note-each horizontal">
+          <div class="note-each-item"><form>
+            Design 1
+            <input
+            type="checkbox"
+            class="boxes"
+            id="multisticker1"
+            value="Multisticker 1"
+            onclick="orderitem('multisticker', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 2
+            <input
+            type="checkbox"
+            class="boxes"
+            id="multisticker2"
+            value="Multisticker 2"
+            onclick="orderitem('multisticker', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 3
+            <input
+            type="checkbox"
+            class="boxes"
+            id="multisticker3"
+            value="Multisticker 3"
+            onclick="orderitem('multisticker', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 4
+            <input
+            type="checkbox"
+            class="boxes"
+            id="multisticker4"
+            value="Multisticker 4"
+            onclick="orderitem('multisticker', 0)"
+            />
+          </div>
+        </form>
+        </div>
+        
       </div>
     </section>
     <footer class="footer">

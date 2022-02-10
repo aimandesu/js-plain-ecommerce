@@ -53,6 +53,7 @@
         <div class="line3"></div>
       </div>
     </section>
+    <section id="cart-popup" class="cart-popup"></section>
     <section class="body-container">
       <div class="product-top-sign">
         <img
@@ -85,7 +86,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 1</h1>
+            <h1>Mug 1</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -93,6 +94,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('mug','mug1', 0, './ProductImages/Mug/design1.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -117,7 +120,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 2</h1>
+            <h1>Mug 2</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -125,6 +128,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('mug','mug2', 0, './ProductImages/Mug/design2.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -149,7 +154,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 3</h1>
+            <h1>Mug 3</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -157,6 +162,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('mug','mug3', 0, './ProductImages/Mug/design3.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -181,7 +188,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 4</h1>
+            <h1>Mug 4</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -189,6 +196,8 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('mug','mug4', 0, './ProductImages/Mug/design4.png')">Add to cart</button>
           </div>
         </div>
         <div class="product-view">
@@ -213,7 +222,7 @@
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
           >
-            <h1>Design 5</h1>
+            <h1>Mug 5</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
               maxime, odio officia nobis pariatur, sapiente ipsum iusto quod
@@ -221,7 +230,65 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <br>
+            <button class="add-to-cart-button" onclick="addCart('mug','mug5', 0, './ProductImages/Mug/design5.png')">Add to cart</button>
           </div>
+        </div>
+      </div>
+      <div class="note-each vertical" id="mug">
+        <h2><a href="./mug.html?key=mug">Mug</a></h2> 
+        <div class="note-each horizontal">
+          <div class="note-each-item"><form>
+            Design 1
+            <input
+            type="checkbox"
+            class="boxes"
+            id="mug1"
+            value="Mug 1"
+            onclick="orderitem('mug', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 2
+            <input
+            type="checkbox"
+            class="boxes"
+            id="mug2"
+            value="Mug 2"
+            onclick="orderitem('mug', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 3
+            <input
+            type="checkbox"
+            class="boxes"
+            id="mug3"
+            value="Mug 3"
+            onclick="orderitem('mug', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 4
+            <input
+            type="checkbox"
+            class="boxes"
+            id="mug4"
+            value="Mug 4"
+            onclick="orderitem('mug', 0)"
+            />
+          </div>
+          <div class="note-each-item">
+            Design 5
+            <input
+            type="checkbox"
+            class="boxes"
+            id="mug5"
+            value="Mug 5"
+            onclick="orderitem('mug', 0)"
+            />
+          </div>
+        </form>
         </div>
       </div>
     </section>
