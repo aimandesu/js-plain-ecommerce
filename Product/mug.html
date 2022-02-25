@@ -94,8 +94,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('mug','mug1', 0, './ProductImages/Mug/design1.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('mug','Mug 1', './ProductImages/Mug/design1.png', 0)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -128,8 +134,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('mug','mug2', 0, './ProductImages/Mug/design2.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('mug','Mug 2', './ProductImages/Mug/design2.png', 1)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -162,8 +174,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('mug','mug3', 0, './ProductImages/Mug/design3.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('mug','Mug 3', './ProductImages/Mug/design3.png', 2)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -196,8 +214,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('mug','mug4', 0, './ProductImages/Mug/design4.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('mug','Mug 4','./ProductImages/Mug/design4.png', 3)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -230,65 +254,26 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('mug','mug5', 0, './ProductImages/Mug/design5.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('mug','Mug 5', './ProductImages/Mug/design5.png', 4)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="mug">
-        <h2><a href="./mug.html?key=mug">Mug</a></h2> 
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="mug1"
-            value="Mug 1"
-            onclick="orderitem('mug', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="mug2"
-            value="Mug 2"
-            onclick="orderitem('mug', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="mug3"
-            value="Mug 3"
-            onclick="orderitem('mug', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="mug4"
-            value="Mug 4"
-            onclick="orderitem('mug', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 5
-            <input
-            type="checkbox"
-            class="boxes"
-            id="mug5"
-            value="Mug 5"
-            onclick="orderitem('mug', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
         </div>
       </div>
     </section>
@@ -344,5 +329,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

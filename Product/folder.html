@@ -94,8 +94,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('folder','folder1', 0, 'ProductImages/Folder/folder1.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('folder','Folder 1', 'ProductImages/Folder/folder1.png', 0)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -128,8 +134,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('folder','folder2', 0, 'ProductImages/Folder/folder2.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('folder','Folder 2', 'ProductImages/Folder/folder2.png', 1)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -162,47 +174,27 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('folder','folder3', 0, 'ProductImages/Folder/folder3.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('folder','Folder 3', 'ProductImages/Folder/folder3.png', 2)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="folder">
-        <h2><a href="./folder.html?key=folder">Folder</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Folder 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="folder1"
-            value="Folder 1"
-            onclick="orderitem('folder', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Folder 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="folder2"
-            value="Folder 2"
-            onclick="orderitem('folder', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Folder 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="folder3"
-            value="Folder 3"
-            onclick="orderitem('folder', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
         </div>
-        
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -257,5 +249,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

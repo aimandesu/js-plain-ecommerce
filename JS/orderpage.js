@@ -436,7 +436,7 @@ function test(k) {
   document.getElementById("input-order").value = k;
 }
 
-//not used probably
+//not used
 function viewPrice() {
   let eachItem = [];
   var price = 0;
@@ -626,13 +626,11 @@ function cart() {
           window.location.reload();
         };
 
-        /*create hidden checkbox
-        var checkBox = document.createElement("input");
-        checkBox.type = "checkbox";
-        checkBox.className = "boxes";
-        checkBox.id = illiterateItem;
-        checkBox.style.display = "none";
-        */
+        // var checkBox = document.createElement("input");
+        // checkBox.type = "checkbox";
+        // checkBox.className = "boxes";
+        // checkBox.id = illiterateItem;
+        // checkBox.style.display = "none";
 
         //create image
         var innerCart = document.createElement("div");
@@ -653,7 +651,7 @@ function cart() {
         div.appendChild(input);
         div.appendChild(buttonAdd);
         div.appendChild(deleteButton);
-        //div.appendChild(checkBox);
+        // div.appendChild(checkBox);
         objTo.appendChild(div);
         u.appendChild(innerCart);
         console.log(u);
@@ -731,13 +729,19 @@ function substract(buttonID, inputID) {
 }
 
 function deleteOrder(orderId, productName) {
-  console.log(productName);
+  console.log(productName); //billbook
   var getLol = JSON.parse(sessionStorage.getItem(productName));
-  console.log(orderId);
-  console.log(getLol);
+  console.log(orderId); //Bill Book 1
+  console.log(getLol); //['Bill Book 1']
   let pos = getLol.indexOf(orderId);
-  console.log(pos);
+  console.log(pos); //0
   let removedItem = getLol.splice(pos, 1);
-  console.log(getLol);
+  console.log(getLol); // []
+  var makeNull = (productName + orderId + "input")
+    .toLowerCase()
+    .split(" ")
+    .join("");
+  console.log(makeNull);
   sessionStorage.setItem(productName, JSON.stringify(getLol.filter((x) => x)));
+  sessionStorage.setItem(makeNull, "deleted");
 }

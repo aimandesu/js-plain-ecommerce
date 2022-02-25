@@ -64,7 +64,7 @@
         />
       </div>
       <div class="product-page">
-        <div class="product-view">
+        <div class="product-view" id="bussiness1">
           <div
             class="product-view-item"
             style="flex-basis: 200px; flex-grow: 1"
@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bussinesscard','bussinesscard1', 0, './ProductImages/Bussiness card/bussiness.png')"
+              onclick="addCart('bussinesscard','Bussiness Card 1', './ProductImages/Bussiness card/bussiness.png', 0)"
             >
               Add to cart
             </button>
@@ -139,10 +140,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bussinesscard','bussinesscard2', 0, './ProductImages/Bussiness card/bussiness2.png')"
+              onclick="addCart('bussinesscard','Bussiness Card 2', './ProductImages/Bussiness card/bussiness2.png', 1)"
             >
               Add to cart
             </button>
@@ -181,10 +183,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bussinesscard','bussinesscard3', 0, './ProductImages/Bussiness card/bussiness3.png')"
+              onclick="addCart('bussinesscard','Bussiness Card 3', './ProductImages/Bussiness card/bussiness3.png', 2)"
             >
               Add to cart
             </button>
@@ -223,10 +226,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bussinesscard','bussinesscard4', 0, './ProductImages/Bussiness card/bussiness4.png')"
+              onclick="addCart('bussinesscard','Bussiness Card 4', './ProductImages/Bussiness card/bussiness4.png', 3)"
             >
               Add to cart
             </button>
@@ -265,10 +269,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bussinesscard','bussinesscard5', 0, './ProductImages/Bussiness card/bussiness5.png')"
+              onclick="addCart('bussinesscard','Bussiness Card 5', './ProductImages/Bussiness card/bussiness5.png', 4)"
             >
               Add to cart
             </button>
@@ -307,81 +312,27 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bussinesscard','bussinesscard6', 0, './ProductImages/Bussiness card/card.jpg')"
+              onclick="addCart('bussinesscard','Bussiness Card 6', './ProductImages/Bussiness card/card.jpg', 5)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="bussinesscard">
-        <h2><a href="./bussinesscard.html?key=bussinesscard">Bussiness Card</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Bussiness Card 1
-            <input
-              type="checkbox"
-              class="boxes"
-              id="bussinesscard1"
-              value="Bussiness Card 1"
-              onclick="orderitem('bussinesscard', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bussiness Card 2
-            <input
-              type="checkbox"
-              class="boxes"
-              id="bussinesscard2"
-              value="Bussiness Card 2"
-              onclick="orderitem('bussinesscard', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bussiness Card 3
-            <input
-              type="checkbox"
-              class="boxes"
-              id="bussinesscard3"
-              value="Bussiness Card 3"
-              onclick="orderitem('bussinesscard', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bussiness Card 4
-            <input
-              type="checkbox"
-              class="boxes"
-              id="bussinesscard4"
-              value="Bussiness Card 4"
-              onclick="orderitem('bussinesscard', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bussiness Card 5
-            <input
-              type="checkbox"
-              class="boxes"
-              id="bussinesscard5"
-              value="Bussiness Card 5"
-              onclick="orderitem('bussinesscard', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bussiness Card 6
-            <input
-              type="checkbox"
-              class="boxes"
-              id="bussinesscard6"
-              value="Bussiness Card 6"
-              onclick="orderitem('bussinesscard', 0)"
-            />
-          </div>
-        </form>
-        </div> 
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -438,5 +389,7 @@
     <script src="./JS/note.js"></script>
     <!--Search Product-->
     <script src="./JS/searchProduct.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <title>Kimoya Order Form</title>
-    <meta name="description" content="Kimoya Order Form is place for customers to fill in the order form after has gone through Kimoya Cart">
+    <meta
+      name="description"
+      content="Kimoya Order Form is place for customers to fill in the order form after has gone through Kimoya Cart"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
@@ -57,10 +60,7 @@
     <section class="body-container">
       <div class="order-cart">
         <div class="order-cart-item">
-          <h1>
-            Please fill in the form to order the
-            item:
-          </h1>
+          <h1>Please fill in the form to order the item:</h1>
         </div>
         <div class="order-cart-item">
           <div id="archfile"></div>
@@ -128,7 +128,7 @@
               onsubmit="createForm()"
               target="_blank"
             >
-            <input
+              <input
                 id="input-name"
                 type="text"
                 name="my-name"
@@ -158,8 +158,9 @@
                 required
               />
               <br />
-              <input type="hidden" name="product-value" id="hidden-value" >
-              <input type="submit" id="order-form" value="Submit"></input>
+              <input type="hidden" name="product-value" id="hidden-value" />
+              <input type="reset" value="Reset field" />
+              <input type="submit" id="order-form" value="Submit" />
             </form>
           </div>
 
@@ -221,9 +222,9 @@
     <script>
       var hiddenVal = JSON.parse(sessionStorage.getItem("total-order"));
       document.getElementById("hidden-value").value = hiddenVal;
-      console.log(hiddenVal)
+      console.log(hiddenVal);
     </script>
-    
+
     <!--Script for order note-->
     <script src="JS/orderpage.js"></script>
     <!--Script for navigation mobile-->

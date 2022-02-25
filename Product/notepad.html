@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('notepad','notepad1', 0, './ProductImages/Notepad/design1.png')"
+              onclick="addCart('notepad','Notepad 1', './ProductImages/Notepad/design1.png', 0)"
             >
               Add to cart
             </button>
@@ -139,10 +140,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('notepad','notepad2', 0, './ProductImages/Notepad/design2.png')"
+              onclick="addCart('notepad','Notepad 2', './ProductImages/Notepad/design2.png', 1)"
             >
               Add to cart
             </button>
@@ -181,10 +183,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('notepad','notepad3', 0, './ProductImages/Notepad/design3.png')"
+              onclick="addCart('notepad','Notepad 3', './ProductImages/Notepad/design3.png', 2)"
             >
               Add to cart
             </button>
@@ -223,10 +226,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('notepad','notepad4', 0, './ProductImages/Notepad/design4.png')"
+              onclick="addCart('notepad','Notepad 4', 0, './ProductImages/Notepad/design4.png', 3)"
             >
               Add to cart
             </button>
@@ -265,10 +269,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('notepad','notepad5', 0, './ProductImages/Notepad/design5.png')"
+              onclick="addCart('notepad','Notepad 5', './ProductImages/Notepad/design5.png', 4)"
             >
               Add to cart
             </button>
@@ -307,82 +312,27 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('notepad','notepad6', 0, './ProductImages/Notepad/design6.png')"
+              onclick="addCart('notepad','Notepad 6', './ProductImages/Notepad/design6.png', 5)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="notepad">
-        <h2><a href="./notepad.html?key=notepad">Notepad</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="notepad1"
-            value="Notepad 1"
-            onclick="orderitem('notepad', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="notepad2"
-            value="Notepad 2"
-            onclick="orderitem('notepad', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="notepad3"
-            value="Notepad 3"
-            onclick="orderitem('notepad', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="notepad4"
-            value="Notepad 4"
-            onclick="orderitem('notepad', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 5
-            <input
-            type="checkbox"
-            class="boxes"
-            id="notepad5"
-            value="Notepad 5"
-            onclick="orderitem('notepad', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 6
-            <input
-            type="checkbox"
-            class="boxes"
-            id="notepad6"
-            value="Notepad 6"
-            onclick="orderitem('notepad', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
         </div>
-        
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -437,5 +387,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

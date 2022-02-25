@@ -97,8 +97,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('moneypacket','moneypacket1', 0, './ProductImages/MoneyPacket/design1.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('moneypacket','Money Packet 1', './ProductImages/MoneyPacket/design1.png', 0)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -134,8 +140,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('moneypacket','moneypacket2', 0, './ProductImages/MoneyPacket/design2.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('moneypacket','Money Packet 2', './ProductImages/MoneyPacket/design2.png', 1)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -171,8 +183,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('moneypacket','moneypacket3', 0, './ProductImages/MoneyPacket/design3.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('moneypacket','Money Packet 3', './ProductImages/MoneyPacket/design3.png', 2)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -208,8 +226,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('moneypacket','moneypacket4', 0, './ProductImages/MoneyPacket/design4.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('moneypacket','Money Packet 4', './ProductImages/MoneyPacket/design4.png', 3)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -245,67 +269,27 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('moneypacket','moneypacket5', 0, './ProductImages/MoneyPacket/design5.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('moneypacket','Money Packet 5', './ProductImages/MoneyPacket/design5.png', 4)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="moneypacket">
-        <h2><a href="./moneypacket.html?key=moneypacket">Money Packet</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="moneypacket1"
-            value="Money Packet 1"
-            onclick="orderitem('moneypacket', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="moneypacket2"
-            value="Money Packet 2"
-            onclick="orderitem('moneypacket', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="moneypacket3"
-            value="Money Packet 3"
-            onclick="orderitem('moneypacket', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="moneypacket4"
-            value="Money Packet 4"
-            onclick="orderitem('moneypacket', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 5
-            <input
-            type="checkbox"
-            class="boxes"
-            id="moneypacket5"
-            value="Money Packet 5"
-            onclick="orderitem('moneypacket', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
         </div>
-        
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -360,5 +344,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

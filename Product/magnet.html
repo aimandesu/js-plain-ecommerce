@@ -97,8 +97,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('magnet','magnet1', 0, './ProductImages/Magnet/magnet1.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('magnet','Magnet 1', './ProductImages/Magnet/magnet1.png', 0)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -134,8 +140,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('magnet','magnet2', 0, 'ProductImages/Magnet/magnet2.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('magnet','Magnet 2', 'ProductImages/Magnet/magnet2.png', 1)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -171,8 +183,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('magnet','magnet3', 0, './ProductImages/Magnet/magnet3.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('magnet','Magnet 3', './ProductImages/Magnet/magnet3.png', 2)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -208,57 +226,27 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('magnet','magnet4', 0, './ProductImages/Magnet/magnet4.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('magnet','Magnet 4', './ProductImages/Magnet/magnet4.png', 3)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="magnet">
-        <h2><a href="./magnet.html?key=magnet">Magnet</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Magnet 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="magnet1"
-            value="Magnet 1"
-            onclick="orderitem('magnet', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Magnet 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="magnet2"
-            value="Magnet 2"
-            onclick="orderitem('magnet', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Magnet 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="magnet3"
-            value="Magnet 3"
-            onclick="orderitem('magnet', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Magnet 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="magnet4"
-            value="Magnet 4"
-            onclick="orderitem('magnet', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
         </div>
-        
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -313,5 +301,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

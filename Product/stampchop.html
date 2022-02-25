@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('stamchop','stamchop1', 0, './ProductImages/StampChop/design1.png')"
+              onclick="addCart('stamchop','Stam Chop 1', './ProductImages/StampChop/design1.png', 0)"
             >
               Add to cart
             </button>
@@ -139,10 +140,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('stamchop','stamchop2', 0, './ProductImages/StampChop/design2.png')"
+              onclick="addCart('stamchop','Stam Chop 2', './ProductImages/StampChop/design2.png', 1)"
             >
               Add to cart
             </button>
@@ -181,10 +183,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('stamchop','stamchop3', 0, './ProductImages/StampChop/design3.png')"
+              onclick="addCart('stamchop','Stam Chop 3','./ProductImages/StampChop/design3.png', 2)"
             >
               Add to cart
             </button>
@@ -223,62 +226,27 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('stamchop','stamchop4', 0, './ProductImages/StampChop/design4.png')"
+              onclick="addCart('stamchop','Stam Chop 4', './ProductImages/StampChop/design4.png', 3)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="stamchop">
-        <h2><a href="./stampchop.html?key=stamchop">Stamchop</a></h2>
-        <div class="note-each">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="stamchop1"
-            value="Stamchop 1"
-            onclick="orderitem('stamchop', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="stamchop2"
-            value="Stamchop 2"
-            onclick="orderitem('stamchop', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="stamchop3"
-            value="Stamchop 3"
-            onclick="orderitem('stamchop', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="stamchop4"
-            value="Stamchop 4"
-            onclick="orderitem('stamchop', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
         </div>
-        
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -333,5 +301,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

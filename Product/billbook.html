@@ -97,8 +97,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('billbook','billbook1', 0, './ProductImages/Bill Book/billbook1.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('billbook','Bill Book 1', './ProductImages/Bill Book/billbook1.png', 0)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -134,8 +140,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('billbook','billbook2', 0, './ProductImages/Bill Book/billbook2.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('billbook', 'Bill Book 2', './ProductImages/Bill Book/billbook2.png', 1)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div id="billbook-3" class="product-view">
@@ -171,8 +183,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('billbook','billbook3', 0, './ProductImages/Bill Book/billbook3.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('billbook', 'Bill Book 3', './ProductImages/Bill Book/billbook3.png', 2)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -208,56 +226,26 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('billbook','billbook4', 0, './ProductImages/Bill Book/billbook4.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('billbook', 'Bill Book 4', './ProductImages/Bill Book/billbook4.png', 3)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="billbook">
-        <h2><a href="./billbook.html?key=billbook">Bill Book</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item">
-            <form>
-            Bill Book 1
-            <input
-              type="checkbox"
-              class="boxes"
-              id="billbook1"
-              value="Bill Book 1"
-              onclick="orderitem('billbook', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bill Book 2
-            <input
-              type="checkbox"
-              class="boxes"
-              id="billbook2"
-              value="Bill Book 2"
-              onclick="orderitem('billbook', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bill Book 3
-            <input
-              type="checkbox"
-              class="boxes"
-              id="billbook3"
-              value="Bill Book 3"
-              onclick="orderitem('billbook', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Bill Book 4
-            <input
-              type="checkbox"
-              class="boxes"
-              id="billbook4"
-              value="Bill Book 4"
-              onclick="orderitem('billbook',0)"
-            />
-          </form>
-          </div>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
         </div>
       </div>
     </section>
@@ -315,5 +303,7 @@
     <script src="./JS/note.js"></script>
     <!--Search Product-->
     <script src="./JS/searchProduct.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

@@ -4,19 +4,40 @@ var countBoxes = [];
 
 var pass = [];
 
-function orderitem(items, index) {
-  var toText = String(items);
-  var items = document.forms[index];
-  var txt = [];
-  console.log(toText);
-
-  for (i = 0; i < items.length; i++) {
-    if (items[i].checked == true) {
-      txt[i] = items[i].value;
-      console.log(txt);
-    }
-    sessionStorage.setItem(toText, JSON.stringify(txt.filter((x) => x)));
+function orderitem(type, id) {
+  var getProductChoose = JSON.parse(sessionStorage.getItem(type));
+  console.log(getProductChoose);
+  if (getProductChoose == null) {
+    sessionStorage.setItem(type, JSON.stringify([]));
+    var getProductChoose = JSON.parse(sessionStorage.getItem(type));
+    getProductChoose.push(id);
+    sessionStorage.setItem(type, JSON.stringify(getProductChoose));
+  } else if (!getProductChoose.includes(id)) {
+    getProductChoose.push(id);
+    sessionStorage.setItem(type, JSON.stringify(getProductChoose));
   }
+  //items, index
+  // var toText = String(items);
+  // var items = document.forms[index];
+  // var txt = [];
+  // console.log(toText);
+  // for (i = 0; i < items.length; i++) {
+  //   if (items[i].checked == true) {
+  //     txt[i] = items[i].value;
+  //     console.log(txt);
+  //   }
+  //   sessionStorage.setItem(toText, JSON.stringify(txt.filter((x) => x)));
+  // }
+  // var lol = [];
+  // lol.push(index);
+  // console.log(lol);
+  // console.log(lol.includes(0));
+  // var testing = JSON.parse(sessionStorage.getItem(toText)); //first thing
+  // console.log(testing.includes("Bill Book 1")); //return true or false
+  // if (!testing.includes("Bill Book 1")) {
+  //   testing.push("Bill Book 1");
+  //   sessionStorage.setItem(toText, JSON.stringify(testing));
+  // }
 }
 
 function getCheckboxItems(ArrID) {
@@ -114,11 +135,62 @@ function cartpop(productName, src) {
   }, 1000);
 }
 
-function addCart(type, id, num, src) {
-  document.getElementById(id).checked = true;
-  //save();
-  orderitem(type, num);
-  cartpop(id, src);
+function cartUnableToAdd() {
+  var target = document.getElementById("cart-popup");
+  target.style.border = "1px solid whitesmoke";
+  var cartnoti = document.createElement("div");
+  var topCart = document.createElement("h4");
+  //topCart.className = "line";
+  topCart.innerHTML = "You must add a quantity greater than zero";
+  topCart.style.border = "none";
+  cartnoti.appendChild(topCart);
+
+  var closeButton = document.createElement("button");
+  closeButton.innerHTML = "Okay";
+  closeButton.className = "unableToAdd";
+  closeButton.onclick = () => {
+    setTimeout(function () {
+      cartnoti.remove();
+      target.style.border = "none";
+    }, 500);
+  };
+  cartnoti.appendChild(closeButton);
+
+  target.appendChild(cartnoti);
+}
+
+function getNumProduct(prodPos, type, id) {
+  var sentToCart = document.getElementsByClassName("totalWants")[prodPos].value;
+  var currentVal = sessionStorage.getItem(type + id + "input");
+  console.log(currentVal);
+  console.log(type + id + "input");
+  if (currentVal == null || currentVal == "deleted") {
+    sessionStorage.setItem(type + id + "input", sentToCart);
+  } else {
+    let x = parseInt(sentToCart) + parseInt(currentVal);
+    console.log(x);
+    sessionStorage.setItem(type + id + "input", x);
+  }
+  console.log(currentVal);
+  console.log(sentToCart);
+
+  // console.log(
+  //   JSON.parse(sessionStorage.getItem(type + id + "input", sentToCart))
+  // );
+}
+
+function addCart(type, id, src, prodPos) {
+  var sentToCart = document.getElementsByClassName("totalWants")[prodPos].value;
+  if (sentToCart < 1) {
+    cartUnableToAdd();
+  } else {
+    //document.getElementById(id).checked = true;
+    //save();
+    orderitem(type, id);
+    cartpop(id, src);
+    getNumProduct(prodPos, type, id.toLowerCase().split(" ").join(""));
+  }
+
   //alert("Item added to cart");
 }
 

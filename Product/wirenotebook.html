@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('wirenotebook','wirenotebook1', 0, './ProductImages/WireNotebook/design1.png')"
+              onclick="addCart('wirenotebook','Wire Notebook 1', './ProductImages/WireNotebook/design1.png', 0)"
             >
               Add to cart
             </button>
@@ -139,10 +140,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('wirenotebook','wirenotebook2', 0, './ProductImages/WireNotebook/design2.png')"
+              onclick="addCart('wirenotebook','Wire Notebook 2', './ProductImages/WireNotebook/design2.png', 1)"
             >
               Add to cart
             </button>
@@ -181,10 +183,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('wirenotebook','wirenotebook3', 0, './ProductImages/WireNotebook/design3.png')"
+              onclick="addCart('wirenotebook','Wire Notebook 3', './ProductImages/WireNotebook/design3.png', 2)"
             >
               Add to cart
             </button>
@@ -223,63 +226,28 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('wirenotebook','wirenotebook4', 0, './ProductImages/WireNotebook/design4.png')"
+              onclick="addCart('wirenotebook','Wire Notebook 4', './ProductImages/WireNotebook/design4.png', 3)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="wirenotebook">
-        <h2><a href="./wirenotebook.html?key=wirenotebook">Wire-o-notebook</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="wirenotebook1"
-            value="Wirenotebook 1"
-            onclick="orderitem('wirenotebook', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="wirenotebook2"
-            value="Wirenotebook 2"
-            onclick="orderitem('wirenotebook', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="wirenotebook3"
-            value="Wirenotebook 3"
-            onclick="orderitem('wirenotebook', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="wirenotebook4"
-            value="Wirenotebook 4"
-            onclick="orderitem('wirenotebook', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
         </div>
       </div>
-
     </section>
     <footer class="footer">
       <div class="container">
@@ -333,5 +301,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

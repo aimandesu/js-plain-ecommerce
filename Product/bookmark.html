@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bookmark','bookmark1', 0, 'ProductImages/Bookmark/bookmark1.png')"
+              onclick="addCart('bookmark','Bookmark 1', 'ProductImages/Bookmark/bookmark1.png', 0)"
             >
               Add to cart
             </button>
@@ -139,10 +140,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bookmark','bookmark2', 0, 'ProductImages/Bookmark/bookmark2.png')"
+              onclick="addCart('bookmark','Bookmark 2', 'ProductImages/Bookmark/bookmark2.png', 1)"
             >
               Add to cart
             </button>
@@ -181,10 +183,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bookmark','bookmark3', 0, 'ProductImages/Bookmark/bookmark3.png')"
+              onclick="addCart('bookmark','Bookmark 3', 'ProductImages/Bookmark/bookmark3.png', 2)"
             >
               Add to cart
             </button>
@@ -223,10 +226,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bookmark','bookmark4', 0, 'ProductImages/Bookmark/bookmark4.png')"
+              onclick="addCart('bookmark','Bookmark 4', 'ProductImages/Bookmark/bookmark4.png', 3)"
             >
               Add to cart
             </button>
@@ -265,10 +269,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bookmark','bookmark5', 0, 'ProductImages/Bookmark/bookmark5.png')"
+              onclick="addCart('bookmark','Bookmark 5', 'ProductImages/Bookmark/bookmark5.png', 4)"
             >
               Add to cart
             </button>
@@ -307,80 +312,26 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('bookmark','bookmark6', 0, 'ProductImages/Bookmark/bookmark6.png')"
+              onclick="addCart('bookmark','Bookmark 6', 'ProductImages/Bookmark/bookmark6.png', 5)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="bookmark">
-        <h2><a href="./bookmark.html?key=bookmark">Bookmark</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookmark1"
-            value="Bookmark 1"
-            onclick="orderitem('bookmark', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookmark2"
-            value="Bookmark 2"
-            onclick="orderitem('bookmark', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookmark3"
-            value="Bookmark 3"
-            onclick="orderitem('bookmark', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 4
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookmark4"
-            value="Bookmark 4"
-            onclick="orderitem('bookmark', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 5
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookmark5"
-            value="Bookmark 5"
-            onclick="orderitem('bookmark', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 6
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookmark6"
-            value="Bookmark 6"
-            onclick="orderitem('bookmark', 0)"
-          />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
         </div>
       </div>
     </section>
@@ -436,5 +387,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

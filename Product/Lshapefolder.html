@@ -97,8 +97,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('Lshapefolder','lshapefolder1', 0, 'ProductImages/LshapeFolder/folder1.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('Lshapefolder','L Shape Folder 1', 'ProductImages/LshapeFolder/folder1.png', 0)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -134,8 +140,14 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('Lshapefolder','lshapefolder2', 0, 'ProductImages/LshapeFolder/folder2.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('Lshapefolder','L Shape Folder 2', 'ProductImages/LshapeFolder/folder2.png', 1)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
         <div class="product-view">
@@ -171,48 +183,28 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
-            <br>
-            <button class="add-to-cart-button" onclick="addCart('Lshapefolder','lshapefolder3', 0, './ProductImages/LshapeFolder/folder3.png')">Add to cart</button>
+            <input type="number" class="totalWants" value="1" min="1" />
+            <br />
+            <button
+              class="add-to-cart-button"
+              onclick="addCart('Lshapefolder','L Shape Folder 3', './ProductImages/LshapeFolder/folder3.png', 2)"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="lshapefolder">
-        <h2><a href="./Lshapefolder.html?key=lshapefolder">L-Shape Plastic Folder</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="lshapefolder1"
-            value="L Shape Folder 1"
-            onclick="orderitem('Lshapefolder', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="lshapefolder2"
-            value="L Shape Folder 2"
-            onclick="orderitem('Lshapefolder', 0)"
-            />
-          </div>
-          <div class="note-each-item">
-            Cupcake Design
-            <input
-            type="checkbox"
-            class="boxes"
-            id="lshapefolder3"
-            value="L Shape Folder 3"
-            onclick="orderitem('Lshapefolder', 0)"
-            />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
         </div>
-        
-      </div> 
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
       <div class="container">
@@ -266,5 +258,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

@@ -395,7 +395,7 @@ ul {
 }
 .footer {
   background-color: #24262b;
-  padding: 70px 0;
+  padding: 60px 0;
 }
 .footer-col {
   width: 25%;
@@ -453,16 +453,42 @@ ul {
   background-color: #ffffff;
 }
 
+.home-subscribe-email {
+  text-align: center;
+  margin: 20px;
+  padding: 50px 50px;
+}
+
+.home-subscribe-email h1 {
+  color: #ffd524;
+}
+
 /*responsive*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
+  .home-subscribe-email {
+    margin: 1px;
+    padding: 10px;
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
 }
 @media (max-width: 300px) {
   .footer-col {
     width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .home-subscribe-email input[type="submit"] {
+    width: 100%;
+  }
+  .home-subscribe-email {
+    padding-bottom: 50px;
   }
 }
 
@@ -785,7 +811,8 @@ input[type="password"] {
   border: 1px solid #ccc;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: #ecb602;
   color: white;
   padding: 10px 20px;
@@ -973,6 +1000,26 @@ textarea {
 .product-top-sign {
   text-align: center;
   padding-top: 20px;
+}
+
+.totalWants {
+  width: 50px;
+  height: 40px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.unableToAdd {
+  width: 100%;
+  color: #ecb602;
+  background-color: #55185d;
+  border-top: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
+.unableToAdd:hover {
+  background-color: #d4a50a;
+  color: #55185d;
 }
 
 /*------------how to order----------*/
@@ -1188,7 +1235,7 @@ textarea {
 }
 
 .note-each {
-  display: none;
+  /* display: none; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -1712,5 +1759,37 @@ pre + p {
 @media screen and (max-width: 750px) {
   .shop-now-mobile {
     display: block;
+  }
+}
+
+/**you may also like***/
+.also-like {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0px;
+  color: #ecb602;
+}
+
+.also-like-container {
+  padding: 5px;
+}
+.also-like-container p {
+  text-align: center;
+  font-size: 20px;
+}
+.also-like-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 750px) {
+  .also-like-container img {
+    width: 150px;
+    height: 150px;
   }
 }

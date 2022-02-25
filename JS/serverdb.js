@@ -2,7 +2,7 @@ function createForm() {
   var my_form = document.createElement("form");
   //new one
   my_form.method = "post";
-  my_form.action = "https://formsubmit.co/aimanafiqbinesam@gmail.com"; //https://formsubmit.co/aimanafiqbinesam@gmail.com
+  my_form.action = "https://formsubmit.co/"; //put email after here, example https://formsubmit.co/test@gmail.com
   /*
   my_form.method = "post";
   my_form.action = "JS/order.php";
@@ -38,7 +38,7 @@ function createForm() {
   my_next = document.createElement("input");
   my_next.type = "hidden";
   my_next.name = "_next";
-  my_next.value = "https://kimoya-tester.herokuapp.com/thankpage.html";
+  my_next.value = "https://kimoya-tester.herokuapp.com/thankpage.html"; //change domain name according to thankpage.html
 
   my_form.appendChild(my_email);
   my_form.appendChild(my_name);

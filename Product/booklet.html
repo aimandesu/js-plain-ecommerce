@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('booklet','booklet1', 0, 'ProductImages/Booklet/booklet1.png')"
+              onclick="addCart('booklet','Booklet 1', 'ProductImages/Booklet/booklet1.png', 0)"
             >
               Add to cart
             </button>
@@ -140,10 +141,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('booklet','booklet2', 0, 'ProductImages/Booklet/booklet3.png')"
+              onclick="addCart('booklet','Booklet 2', 'ProductImages/Booklet/booklet3.png', 1)"
             >
               Add to cart
             </button>
@@ -182,10 +184,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('booklet','booklet3', 0, 'ProductImages/Booklet/booklet2.png')"
+              onclick="addCart('booklet','Booklet 3', 'ProductImages/Booklet/booklet2.png', 2)"
             >
               Add to cart
             </button>
@@ -224,10 +227,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('booklet','wired', 0, './ProductImages/Booklet/wired.png')"
+              onclick="addCart('booklet','Wired', './ProductImages/Booklet/wired.png', 3)"
             >
               Add to cart
             </button>
@@ -263,10 +267,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('booklet','bookletcustom', 0, 'ProductImages/Booklet/custom.png')"
+              onclick="addCart('booklet','Booklet Custom', 'ProductImages/Booklet/custom.png', 4)"
             >
               Add to cart
             </button>
@@ -302,80 +307,26 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('booklet','a4size', 0, 'ProductImages/Booklet/a4.png')"
+              onclick="addCart('booklet','A4 Size', 'ProductImages/Booklet/a4.png', 5)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="booklet">
-        <h2><a href="./booklet.html?key=booklet">Booklet</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Design 1
-            <input
-            type="checkbox"
-            class="boxes"
-            id="booklet1"
-            value="Booklet 1"
-            onclick="orderitem('booklet', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 2
-            <input
-            type="checkbox"
-            class="boxes"
-            id="booklet2"
-            value="Booklet 2"
-            onclick="orderitem('booklet', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Design 3
-            <input
-            type="checkbox"
-            class="boxes"
-            id="booklet3"
-            value="Booklet 3"
-            onclick="orderitem('booklet', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Wired
-            <input
-            type="checkbox"
-            class="boxes"
-            id="wired"
-            value="Wired"
-            onclick="orderitem('booklet', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Custom
-            <input
-            type="checkbox"
-            class="boxes"
-            id="bookletcustom"
-            value="Booklet Custom"
-            onclick="orderitem('booklet', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            A4 Size
-            <input
-            type="checkbox"
-            class="boxes"
-            id="a4size"
-            value="A4 Size"
-            onclick="orderitem('booklet', 0)"
-          />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
         </div>
       </div>
     </section>
@@ -431,5 +382,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>

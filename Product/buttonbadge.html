@@ -97,10 +97,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('buttonbadge','circle', 0, './ProductImages/Badge/circle button badge.jpg')"
+              onclick="addCart('buttonbadge','Circle', './ProductImages/Badge/circle button badge.jpg', 0)"
             >
               Add to cart
             </button>
@@ -139,10 +140,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('buttonbadge','singular', 0, './ProductImages/Badge/singular button.png')"
+              onclick="addCart('buttonbadge','Singular', './ProductImages/Badge/singular button.png', 1)"
             >
               Add to cart
             </button>
@@ -178,10 +180,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('buttonbadge','custom', 0, './ProductImages/Badge/custom.png')"
+              onclick="addCart('buttonbadge','Custom', './ProductImages/Badge/custom.png', 2)"
             >
               Add to cart
             </button>
@@ -217,10 +220,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('buttonbadge','midnight', 0, 'ProductImages/Badge/midnight.png')"
+              onclick="addCart('buttonbadge','Midnight', 'ProductImages/Badge/midnight.png', 3)"
             >
               Add to cart
             </button>
@@ -259,10 +263,11 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('buttonbadge','rectangle', 0, 'ProductImages/Badge/rectangle.png')"
+              onclick="addCart('buttonbadge','Rectangle', 'ProductImages/Badge/rectangle.png', 4)"
             >
               Add to cart
             </button>
@@ -298,80 +303,26 @@
               cupiditate inventore assumenda!
             </p>
             <p>price</p>
+            <input type="number" class="totalWants" value="1" min="1" />
             <br />
             <button
               class="add-to-cart-button"
-              onclick="addCart('buttonbadge','pink', 0, 'ProductImages/Badge/pink.png')"
+              onclick="addCart('buttonbadge','Pink', 'ProductImages/Badge/pink.png', 5)"
             >
               Add to cart
             </button>
           </div>
         </div>
       </div>
-      <div class="note-each vertical" id="buttonbadge">
-        <h2><a href="./buttonbadge.html?key=buttonbadge">Button Badge</a></h2>
-        <div class="note-each horizontal">
-          <div class="note-each-item"><form>
-            Circle
-            <input
-            type="checkbox"
-            class="boxes"
-            id="circle"
-            value="Circle"
-            onclick="orderitem('buttonbadge', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Singular
-            <input
-            type="checkbox"
-            class="boxes"
-            id="singular"
-            value="Singular"
-            onclick="orderitem('buttonbadge', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Custom
-            <input
-            type="checkbox"
-            class="boxes"
-            id="custom"
-            value="Custom"
-            onclick="orderitem('buttonbadge', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Midnight
-            <input
-            type="checkbox"
-            class="boxes"
-            id="midnight"
-            value="Midnight"
-            onclick="orderitem('buttonbadge', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Rectangle
-            <input
-            type="checkbox"
-            class="boxes"
-            id="rectangle"
-            value="Rectangle"
-            onclick="orderitem('buttonbadge', 0)"
-          />
-          </div>
-          <div class="note-each-item">
-            Pink
-            <input
-            type="checkbox"
-            class="boxes"
-            id="pink"
-            value="Pink"
-            onclick="orderitem('buttonbadge', 0)"
-          />
-          </div>
-        </form>
+      <div class="also-like-div">
+        <div class="also-like">
+          <h1>You might also like</h1>
+        </div>
+        <div class="also-like">
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
+          <div class="also-like-container"></div>
         </div>
       </div>
     </section>
@@ -427,5 +378,7 @@
     <script src="./JS/openCloseNote.js"></script>
     <!--Script for note-->
     <script src="./JS/note.js"></script>
+    <!--You might also like-->
+    <script src="./JS/alsolikearray.js"></script>
   </body>
 </html>
